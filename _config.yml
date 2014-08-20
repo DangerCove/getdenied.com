@@ -1,0 +1,34 @@
+# Jekyll configuration precedence:
+# 1. Gruntfile task
+# 2. config.build.yml
+# 3. config.yml
+
+url: http://www.getdenied.com
+name: Denied &mdash; Skips Terrible Music
+description: Denied saves your ears from music you can't stand. Skip songs by artist, title or album.
+keywords: spotify,skip,terrible,music,radio,playlist,next,itunes,remote,control,song,album,track,band,artist,filter,menu,disable
+author:
+  name: Boy van Amstel
+  email: boy@dangercove.com
+
+# Grunt handles images and assets.
+exclude: ['img', 'css', 'js', 'fonts',
+          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
+
+include: ['.htaccess']
+
+# _config.build.yml sets future and show_drafts to false on `grunt build`
+future: true
+show_drafts: true
+
+# Markdown library
+markdown: redcarpet
+#   extensions: ['fenced_code_blocks', 'smart']
+
+pygments: false
+
+permalink: /blog/:year/:month/:day/:title/
+
+analytics:
+  GA:
+    trackingID: UA-27275793-26
