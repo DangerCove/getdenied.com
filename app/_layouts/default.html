@@ -19,23 +19,23 @@
         <!-- build:css({app,.tmp}) /css/style.css -->
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/app.css">
+        <link rel="stylesheet" href="/css/glyphicons.css">
         <link rel="stylesheet" href="/css/main.css">
         <!-- endbuild -->
-
     </head>
     <body>
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-          </div>
-        </div>
+    <div class="container">
+      <header class="header">
+        <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+        <a class="extra" href="/">home</a>
+      </header>
+    </div>
+    <div class="container">
+      {{ content }}
+    </div>
+    <footer class="footer">
+    </footer>
 
     <!-- build:js({app,.tmp}) /js/scripts.js -->
     <script src="/js/main.js"></script>

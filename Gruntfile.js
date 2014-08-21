@@ -235,13 +235,26 @@ module.exports = function (grunt) {
       }
     },
     // Usemin adds files to concat
-    concat: {},
+    concat: {
+      dist: {
+        options: {
+          stripBanners: true
+        }
+      }
+    },
     // Usemin adds files to uglify
-    uglify: {},
+    uglify: {
+      dist: {
+        options: {
+          preserveComments: false
+        }
+      }
+    },
     // Usemin adds files to cssmin
     cssmin: {
       dist: {
         options: {
+          keepSpecialComments: 0,
           check: 'gzip'
         }
       }
@@ -413,7 +426,7 @@ module.exports = function (grunt) {
     'svgmin',
     'filerev',
     'usemin',
-    'htmlmin'
+    // 'htmlmin'
     ]);
 
   grunt.registerTask('default', [
