@@ -1,7 +1,59 @@
 @import "foundation/components/global";
+@import "fonts";
+
+$default-fontfamily: 'Helvetica Neue', 'Helvetica', 'Arial', 'Sans serif';
+$header-fontfamily: 'Axis', 'Helvetica Neue', 'Helvetica', 'Arial', 'Sans-serif';
+$font-color: #333;
+$light-font-color: #999;
+$primary-color: #D94242;
+
+body {
+  font-style: $default-fontfamily;
+  color: $font-color;
+}
+h1 {
+  font-family: $header-fontfamily;
+  a {
+    color: $font-color;
+    text-decoration: none;
+  }
+  span {
+    font-family: $default-fontfamily;
+    font-weight: normal;
+    color: $light-font-color;
+  }
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+}
+a {
+  color: $primary-color;
+}
+
+.centered {
+  margin: 0 auto;
+}
 
 .container { 
   @include clearfix;
+  @extend .centered;
   max-width: 960px; 
   margin: 0 auto; 
+}
+
+#header {
+  text-align: center;
+  h1 {
+    font-weight: bold;
+  }
+  .inline-list {
+    display: inline-block;
+  }
+}
+
+.icon {
+  @extend .centered;
+  display: block;
+  width: 128px;
+  margin-bottom: 20px;
 }
