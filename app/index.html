@@ -3,16 +3,54 @@ layout: default
 title: Denied - Skip Terrible Music
 ---
 
-<section id="rulesoverview">
-  <div class="menubar-container">
-    <div class="menubar">
-      <img src="/img/menubaricon-active@2x.jpg" alt="Menu Bar Icon">
-    </div>
-    <img src="/img/screen-rulesoverview@2x.png" alt="Rules Overview">
-  </div>
-  <h2>Set Rules</h2>
-</section>
+<div id="player">
+  <table>
+    <tr>
+      <th>&nbsp;</th>
+      <th>Track</th>
+      <th>Artist</th>
+      <th class="text-right">Time</th>
+      <th class="show-for-medium-up">Album</th>
+    </tr>
+    <tr class="song active">
+      <td><i class="glyphicons volume_up"></i></td>
+      <td>Airglow</td>
+      <td>Trey Frey</td>
+      <td class="text-right">4:36</td>
+      <td class="show-for-medium-up">Refresh</td>
+    </tr>
+    <tr class="song">
+      <td><i class="glyphicons volume_up"></i></td>
+      <td>Get Hurt</td>
+      <td>The Gaslight Athem</td>
+      <td class="text-right">3:43</td>
+      <td class="show-for-medium-up">Get Hurt</td>
+    </tr>
+    <tr class="song skip">
+      <td><i class="glyphicons mute"></i></td>
+      <td>Rockstar</td>
+      <td>Nickelback :(</td>
+      <td class="text-right">4:12</td>
+      <td class="show-for-medium-up">All The Right Reasons</td>
+    </tr>
+    <tr class="song">
+      <td><i class="glyphicons volume_up"></i></td>
+      <td>Gun</td>
+      <td>CHVRCHES</td>
+      <td class="text-right">3:52</td>
+      <td class="show-for-medium-up">Gun</td>
+    </tr>
+    <tr class="song">
+      <td><i class="glyphicons volume_up"></i></td>
+      <td>Patent Pending</td>
+      <td>Heavens</td>
+      <td class="text-right">3:46</td>
+      <td class="show-for-medium-up">Patent Pending</td>
+    </tr>
+  </table>
+</div>
 
+<!--
 <div id="home">
   <ul class="posts">
     {% for post in site.posts %}
@@ -20,3 +58,4 @@ title: Denied - Skip Terrible Music
     {% endfor %}
   </ul>
 </div>
+-->

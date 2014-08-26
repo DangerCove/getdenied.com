@@ -5,6 +5,7 @@ $default-fontfamily: 'Helvetica Neue', 'Helvetica', 'Arial', 'Sans serif';
 $header-fontfamily: 'Axis', 'Helvetica Neue', 'Helvetica', 'Arial', 'Sans-serif';
 $font-color: #333;
 $primary-color: #D94242;
+$approve-color: #4BB000;
 
 body {
   font-style: $default-fontfamily;
@@ -37,7 +38,6 @@ a {
 
 #header {
   text-align: center;
-  padding: 50px 0;
   h1 {
     font-weight: normal;
     color: white;
@@ -45,7 +45,7 @@ a {
     font-size: 200%;
     line-height: 150%;
     padding: 32px 8px;
-    margin: 32px 0 0;
+    margin: 0;
   }
   small {
     color: $primary-color;
@@ -56,27 +56,54 @@ a {
   nav {
     display: none;
   }
+  .icon {
+    @extend .centered;
+    display: block;
+    width: 256px;
+    margin: 32px auto;
+  }
 }
 
-.icon {
-  @extend .centered;
-  display: block;
-  width: 128px;
-  margin-bottom: 30px;
-  background-color: white;
-}
-
-.menubar-container {
-  .menubar {
-    height: 32px;
-    padding: 0 24px;
-    background: white;
-    box-shadow: 0 16px 16px rgba(0,0,0,.3);
-    border-top: #cecece 1px solid;
-    border-bottom: #7e7e7e 1px solid;
-    img {
-      margin: 0 1%;
-      max-height: 100%;
+#player {
+  table {
+    width: 100%;
+    tr {
+      border-bottom: $primary-color 1px solid;
+      th {
+        color: $primary-color;
+        text-align: left;
+        font-weight: normal;
+      }
+      &.active {
+        background: $primary-color;
+        color: white;
+      }
+      &.skip.active {
+        text-decoration: line-through;
+      }
+      td {
+        font-size: 0.8rem;
+        i {
+          padding: 0;
+          vertical-align: text-bottom;
+          &::before {
+            margin: 0;
+            position: relative;
+            top: auto;
+            left: auto;
+            font-size: 0.8rem;
+            color: white;
+            display: inline;
+          }
+        }
+      }
+      th:first-child,td:first-child {
+        width: 1rem;
+        text-align: center;
+      }
+      th,td {
+        padding: 0 8px;
+      }
     }
   }
 }
