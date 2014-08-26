@@ -6,9 +6,11 @@
     <body>
 
     <header id="header">
-      <h1 class="title"><a href="/">{{ site.name }}</a> saves your ears from Nickelback</h1>
+      <h1 class="title"><a href="/" class="appname">{{ site.name }}</a> saves your ears from Nickelback</h1>
       <small>or <span class="show-for-medium-up">Justin Bieber, One Direction, Rebecca Black and</span> any other band, song or album you can't stand.</small>
       <img class="icon" src="img/icon_256x256@2x.png" alt="Denied App Icon">
+      <!-- <p class="caption"><a href="{{ page.urls.update }}">v1.0.0</a> | Mac OS X 10.9+</p> -->
+      <p class="caption"><span class="appname">{{ site.name }}</span> for Mac</p>
       <nav>
         <ul class="inline-list">
           <li><a href="#">Features</a></li>
@@ -21,6 +23,8 @@
     {{ content }}
 
     <footer id="footer">
+      <p class="copyright">Created with <i class="fa fa-volume-up"></i> by <a href="http://www.dangercove.com" target="_blank">Danger Cove</a>.</p>
+      <p class="disclaimer"><small>I sometimes do enjoy listening to Nickelback.</small></p>
     </footer>
 
     {% include _scripts.html %}

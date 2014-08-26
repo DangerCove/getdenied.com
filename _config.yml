@@ -30,6 +30,10 @@ pygments: false
 
 permalink: /blog/:year/:month/:day/:title/
 
+urls:
+  update: http://update.getdenied.com
+  download: http://download.getdenied.com/Denied-latest.zip
+
 analytics:
   GA:
     trackingID: UA-27275793-26
