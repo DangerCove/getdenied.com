@@ -4,7 +4,6 @@
 $default-fontfamily: 'Helvetica Neue', 'Helvetica', 'Arial', 'Sans serif';
 $header-fontfamily: 'Axis', 'Helvetica Neue', 'Helvetica', 'Arial', 'Sans-serif';
 $font-color: #333;
-$light-font-color: #999;
 $primary-color: #D94242;
 
 body {
@@ -12,15 +11,10 @@ body {
   color: $font-color;
 }
 h1 {
-  font-family: $header-fontfamily;
   a {
-    color: $font-color;
+    font-family: $header-fontfamily;
+    color: white;
     text-decoration: none;
-  }
-  span {
-    font-family: $default-fontfamily;
-    font-weight: normal;
-    color: $light-font-color;
   }
 }
 h1,h2,h3,h4,h5,h6 {
@@ -43,11 +37,24 @@ a {
 
 #header {
   text-align: center;
+  padding: 50px 0;
   h1 {
-    font-weight: bold;
+    font-weight: normal;
+    color: white;
+    background-color: $primary-color;
+    font-size: 200%;
+    line-height: 150%;
+    padding: 32px 8px;
+    margin: 32px 0 0;
+  }
+  small {
+    color: $primary-color;
   }
   .inline-list {
     display: inline-block;
+  }
+  nav {
+    display: none;
   }
 }
 
@@ -55,5 +62,21 @@ a {
   @extend .centered;
   display: block;
   width: 128px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+.menubar-container {
+  .menubar {
+    height: 32px;
+    padding: 0 24px;
+    background: white;
+    box-shadow: 0 16px 16px rgba(0,0,0,.3);
+    border-top: #cecece 1px solid;
+    border-bottom: #7e7e7e 1px solid;
+    img {
+      margin: 0 1%;
+      max-height: 100%;
+    }
+  }
 }
