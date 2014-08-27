@@ -101,6 +101,10 @@ small {
     line-height: 150%;
     margin: 0;
     padding: 32px 8px 0;
+    .fa-asterisk {
+      font-size: 1rem;
+      vertical-align: text-top;
+    }
   }
   small {
     color: $primary-color;
