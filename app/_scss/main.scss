@@ -177,9 +177,11 @@ small {
 }
 
 @media #{$large-up} { 
-  .screen-container {
+  .screen-container,.player-container {
     @extend .centered;
     max-width: 960px;
+  }
+  .screen-container {
     position: relative;
     &::before {
       display:block;
@@ -192,6 +194,7 @@ small {
   }
   #player {
     table {
+      border-left: $primary-color 1px solid;
       border-right: $primary-color 1px solid;
     }
   }
