@@ -15,6 +15,8 @@ class Player
     @setup_controls()
   playing: ->
     if @_interval then true else false
+  denying: ->
+    $('.skip', @_element).length > 0
   setup_controls: ->
     $('.controls a', @_element).click((e) =>
       if @playing()
@@ -25,6 +27,17 @@ class Player
       @update_controls()
       e.preventDefault()
       )
+    $('.toggle-denied', @_element).click((e) =>
+      if @denying()
+        $('.skip', @_element).removeClass('skip')
+      else
+        $('.should-skip', @_element).addClass('skip')
+        current = $($('tr.active', @_element)[0])
+        if current.hasClass('skip')
+          @skip()
+      @update_controls()
+      e.preventDefault()
+      )
   update_controls: ->
     if @playing()
       $('.controls a').removeClass().addClass('pause')
@@ -32,6 +45,11 @@ class Player
     else
       $('.controls a').removeClass().addClass('play')
       $('.controls i').removeClass('fa-pause').addClass('fa-play')
+
+    if @denying()
+      $('.toggle-denied', @_element).html('Disable Denied')
+    else
+      $('.toggle-denied', @_element).html('Enable Denied')
   next: ->
     # Determine current
     current = $($('tr.active', @_element)[0])
@@ -41,10 +59,13 @@ class Player
     current.removeClass('active')    
     # Add active class to next song
     next.addClass('active')
+    $('td:first-child i', next).removeClass().addClass('fa fa-play-circle-o')
     # If song should be skipped, skip it
     if next.hasClass('skip')
-      @skip()
-  skip: ->
+      @skip(next)
+  skip: (song) ->
+    # Set other icon
+    $('td:first-child i', song).removeClass().addClass('fa fa-times')
     # Wait a moment then skip it
     callback = @next.bind(@) # Retain correct 'this'
     setTimeout(callback, 250);

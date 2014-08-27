@@ -3,65 +3,132 @@ layout: default
 title: Denied - Skip Terrible Music
 ---
 
-<section id="player">
-  <table>
-    <tr>
-      <th>&nbsp;</th>
-      <th>Track</th>
-      <th>Artist</th>
-      <th class="text-right">Time</th>
-      <th class="show-for-medium-up">Album</th>
-    </tr>
-    <tr class="song active">
-      <td><i class="fa fa-play-circle-o"></i></td>
-      <td>Airglow</td>
-      <td>Trey Frey</td>
-      <td class="text-right">4:36</td>
-      <td class="show-for-medium-up">Refresh</td>
-    </tr>
-    <tr class="song">
-      <td><i class="fa fa-play-circle-o"></i></td>
-      <td>Get Hurt</td>
-      <td>The Gaslight Athem</td>
-      <td class="text-right">3:43</td>
-      <td class="show-for-medium-up">Get Hurt</td>
-    </tr>
-    <tr class="song skip">
-      <td><i class="fa fa-times"></i></td>
-      <td>Rockstar</td>
-      <td>Nickelback <span><i class="fa fa-frown-o"></i></span></td>
-      <td class="text-right">4:12</td>
-      <td class="show-for-medium-up">All The Right Reasons</td>
-    </tr>
-    <tr class="song">
-      <td><i class="fa fa-play-circle-o"></i></td>
-      <td>Gun</td>
-      <td>CHVRCHES</td>
-      <td class="text-right">3:52</td>
-      <td class="show-for-medium-up">Gun</td>
-    </tr>
-    <tr class="song">
-      <td><i class="fa fa-play-circle-o"></i></td>
-      <td>Patent Pending</td>
-      <td>Heavens</td>
-      <td class="text-right">3:46</td>
-      <td class="show-for-medium-up">Patent Pending</td>
-    </tr>
-  </table>
-  <p class="caption">Denied skips songs that match your filters.</p>
-  <div class="controls">
-    <a href="#" class="pause"><i class="fa fa-pause"></i></a>
+<section id="any-other" class="screenshot">
+  <div class="container">
+    <h2><i class="fa fa-asterisk"></i> Or any other band, song or album</h2>
+    <p>Imagine listening to a great Spotify radio station or playlist, and all of a sudden that song or band you can't stand comes up. Don't you hate that? I sure do!</p>
+    <p>Denied is a Mac app that monitors Spotify and skips songs that match the filters that you've setup. Get Denied and enjoy the Christmas season, Top 40 playlists and Spotify radio without the annoying songs you don't like!</p>
+  </div>
+  <div class="screen-container">
+    <img src="/img/screen-rulesoverview.jpg" alt="Rules Overview">
   </div>
 </section>
 
-<section class="container">
-  <h2>Features</h2>
-  <ul>
-    <li>Set your own filters, based on artist, title and album.</li>
-    <li>Temporarily disable Denied with the flip of a switch.</li>
-    <li>Denied can notify you when a song was skipped.</li>
-    <li>Keep track of how often Denied has saved your ears.</li>
-  </ul>
+<section class="mailinglist">
+  <div class="container">
+    <h2><i class="fa fa-rocket"></i> Almost Done</h2>
+    <p>Denied is almost ready to go and will be available on the Mac App Store in the first half of September.</p>
+    <p>Want to be the first to know when it comes out? Sign up for the mailing list.</p>
+    {% include _mailinglist.html %}
+  </div>
+</section>
+
+<section id="filters" class="screenshot">
+  <div class="container">
+    <h2><i class="fa fa-crosshairs"></i> Super flexible filters</h2>
+    <p>Skip songs based on its artist, title or the album is appeared on.</p>
+  </div>
+  <div class="screen-container">
+    <img src="/img/screen-rule.jpg" alt="Adjust Filters">
+  </div>
+</section>
+
+<section id="notifications" class="screenshot">
+  <div class="container">
+    <h2><i class="fa fa-bullhorn"></i> Cool notifications</h2>
+    <p>Denied will optionally let you know when it's skipped a track. It will also keep track of how often a filter has been used.</p>
+    <p>Yea, statistics!</p>
+  </div>
+  <div class="screen-container">
+    <img src="/img/screen-notifications.jpg" alt="Notifications">
+  </div>
+</section>
+
+<section id="disabe" class="screenshot">
+  <div class="container">
+    <h2><i class="fa fa-toggle-off"></i> Easily switched off</h2>
+    <p>In the mood for some terrible music? Just switch Denied off for a moment.</p>
+  </div>
+  <div class="screen-container">
+    <img src="/img/screen-disable.jpg" alt="Temporarily Disable Denied">
+  </div>
+</section>
+
+<section id="player">
+  <div class="container">
+    <h2><i class="fa fa-flask"></i> Battle simulation</h2>
+    <p>This is a hyper realistic demo of how Denied would work on your Mac. Pay attention.
+  </div>
+  <div class="screen-container">
+    <p class="caption">Without Denied, Spotify would just play Nickelback. <a class="toggle-denied" href="#">Enable Denied</a>.</p>
+    <table>
+      <tr>
+        <th>&nbsp;</th>
+        <th>Track</th>
+        <th>Artist</th>
+        <th class="text-right">Time</th>
+        <th class="show-for-medium-up">Album</th>
+      </tr>
+      <tr class="song active">
+        <td><i class="fa fa-play-circle-o"></i></td>
+        <td>Airglow</td>
+        <td>Trey Frey</td>
+        <td class="text-right">4:36</td>
+        <td class="show-for-medium-up">Refresh</td>
+      </tr>
+      <tr class="song">
+        <td><i class="fa fa-play-circle-o"></i></td>
+        <td>Get Hurt</td>
+        <td>The Gaslight Athem</td>
+        <td class="text-right">3:43</td>
+        <td class="show-for-medium-up">Get Hurt</td>
+      </tr>
+      <tr class="song should-skip">
+        <td><i class="fa fa-play-circle-o"></i></td>
+        <td>Rockstar</td>
+        <td>Nickelback <span><i class="fa fa-frown-o"></i></span></td>
+        <td class="text-right">4:12</td>
+        <td class="show-for-medium-up">All The Right Reasons</td>
+      </tr>
+      <tr class="song">
+        <td><i class="fa fa-play-circle-o"></i></td>
+        <td>Gun</td>
+        <td>CHVRCHES</td>
+        <td class="text-right">3:52</td>
+        <td class="show-for-medium-up">Gun</td>
+      </tr>
+      <tr class="song">
+        <td><i class="fa fa-play-circle-o"></i></td>
+        <td>Patent Pending</td>
+        <td>Heavens</td>
+        <td class="text-right">3:46</td>
+        <td class="show-for-medium-up">Patent Pending</td>
+      </tr>
+    </table>
+    <div class="controls">
+      <a href="#" class="pause"><i class="fa fa-pause"></i></a>
+    </div>
+  </div>
+</section>
+
+<section id="requirements">
+  <div class="container">
+    <h2><i class="fa fa-check"></i> Requirements</h2>
+    <ul>
+      <li>Currently only works with <a href="http://www.spotify.com" target="_blank">Spotify</a>. Support for more music apps and services is planned.</li>
+      <li>A 64bit Mac running OS X Mavericks (10.9) or Yosemite (10.10).
+      <li>A distaste for certain bands, songs or albums.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="mailinglist">
+  <div class="container">
+    <h2><i class="fa fa-rocket"></i> Almost Done</h2>
+    <p>Denied is almost ready to go and will be available on the Mac App Store in the first half of September.</p>
+    <p>Want to be the first to know when it comes out? Sign up for the mailing list.</p>
+    {% include _mailinglist.html %}
+  </div>
 </section>
 
 <!--
