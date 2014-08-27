@@ -1,5 +1,3 @@
-# Some comment
-
 class Player
   @_element: null
   @_interval: null
@@ -49,7 +47,7 @@ class Player
     if @denying()
       $('.toggle-denied', @_element).html('Disable Denied')
     else
-      $('.toggle-denied', @_element).html('Enable Denied')
+      $('.toggle-denied', @_element).html('Skip Terrible Music')
   next: ->
     # Determine current
     current = $($('tr.active', @_element)[0])

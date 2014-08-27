@@ -7,7 +7,7 @@ title: Denied - Skip Terrible Music
   <div class="container">
     <h2><i class="fa fa-asterisk"></i> Or any other band, song or album</h2>
     <p>Imagine listening to a great Spotify radio station or playlist, and all of a sudden that song or band you can't stand comes up. Don't you hate that? I sure do!</p>
-    <p>Denied is a Mac app that monitors Spotify and skips songs that match the filters that you've setup. Get Denied and enjoy the Christmas season, Top 40 playlists and Spotify radio without the annoying songs you don't like!</p>
+    <p>This handy Mac app monitors Spotify and skips songs that match the filters that you've setup. Get Denied and enjoy the Christmas season, Top 40 playlists and Spotify radio without the annoying songs you don't like!</p>
   </div>
   <div class="screen-container">
     <img src="/img/screen-rulesoverview.jpg" alt="Rules Overview">
@@ -26,7 +26,8 @@ title: Denied - Skip Terrible Music
 <section id="filters" class="screenshot">
   <div class="container">
     <h2><i class="fa fa-crosshairs"></i> Super flexible filters</h2>
-    <p>Skip songs based on its artist, title or the album is appeared on.</p>
+    <p>Skip songs based on its artist, title or the album it appears on. You can even specify how keywords are matched: should the target contain the keywords, start or end with them or match the keywords exactly.</p>
+    <p>Just disable a filter to not skip songs that match it temporarily, or remove it completely.</p>
   </div>
   <div class="screen-container">
     <img src="/img/screen-rule.jpg" alt="Adjust Filters">
@@ -36,8 +37,8 @@ title: Denied - Skip Terrible Music
 <section id="notifications" class="screenshot">
   <div class="container">
     <h2><i class="fa fa-bullhorn"></i> Cool notifications</h2>
-    <p>Denied will optionally let you know when it's skipped a track. It will also keep track of how often a filter has been used.</p>
-    <p>Yea, statistics!</p>
+    <p>Optionally receive notifications when a track is skipped and keep track of how often a filter has been used.</p>
+    <p>Yeah, statistics!</p>
   </div>
   <div class="screen-container">
     <img src="/img/screen-notifications.jpg" alt="Notifications">
@@ -46,21 +47,21 @@ title: Denied - Skip Terrible Music
 
 <section id="disabe" class="screenshot">
   <div class="container">
-    <h2><i class="fa fa-toggle-off"></i> Easily switched off</h2>
-    <p>In the mood for some terrible music? Just switch Denied off for a moment.</p>
+    <h2><i class="fa fa-toggle-on"></i> Easily switched off</h2>
+    <p>In the mood for some awful music? Just disable skipping for a moment.</p>
   </div>
   <div class="screen-container">
-    <img src="/img/screen-disable.jpg" alt="Temporarily Disable Denied">
+    <img src="/img/screen-disable.jpg" alt="Temporarily Switch Off">
   </div>
 </section>
 
 <section id="player">
   <div class="container">
     <h2><i class="fa fa-flask"></i> Battle simulation</h2>
-    <p>This is a hyper realistic demo of how Denied would work on your Mac. Pay attention.
+    <p>This is a hyper realistic demo of how track skipping works. Pay attention.
   </div>
   <div class="player-container">
-    <p class="caption">Without Denied, Spotify would just play Nickelback. <a class="toggle-denied" href="#">Enable Denied</a>.</p>
+    <p class="caption">Normally, Spotify would just play Nickelback. Now try this: <a class="toggle-denied" href="#">Skip Terrible Music</a>.</p>
     <table>
       <tr>
         <th>&nbsp;</th>
@@ -97,12 +98,12 @@ title: Denied - Skip Terrible Music
         <td class="text-right">3:52</td>
         <td class="show-for-medium-up">Gun</td>
       </tr>
-      <tr class="song">
+      <tr class="song should-skip">
         <td><i class="fa fa-play-circle-o"></i></td>
-        <td>Patent Pending</td>
-        <td>Heavens</td>
-        <td class="text-right">3:46</td>
-        <td class="show-for-medium-up">Patent Pending</td>
+        <td>Friday</td>
+        <td>Rebecca Black <span><i class="fa fa-frown-o"></i></span></td>
+        <td class="text-right">3:30</td>
+        <td class="show-for-medium-up">Friday</td>
       </tr>
     </table>
     <div class="controls">
@@ -124,7 +125,7 @@ title: Denied - Skip Terrible Music
 
 <section class="mailinglist">
   <div class="container">
-    <h2><i class="fa fa-rocket"></i> Almost Done</h2>
+    <h2><i class="fa fa-rocket"></i> Start skipping</h2>
     <p>Denied is almost ready to go and will be available on the Mac App Store in the first half of September.</p>
     <p>Want to be the first to know when it comes out? Sign up for the mailing list.</p>
     {% include _mailinglist.html %}
