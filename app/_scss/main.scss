@@ -27,6 +27,11 @@ a {
     text-decoration: underline;
   }
 }
+.button {
+  &:hover {
+    text-decoration: none;
+  }
+}
 
 section {
   margin-bottom: 64px;
@@ -80,7 +85,7 @@ small {
 .container { 
   @include clearfix;
   @extend .centered;
-  max-width: 960px;
+  max-width: 768px;
   padding: 0 16px;
 }
 
@@ -152,9 +157,22 @@ small {
       }
     }
   }
-  .controls {
+  .controls,.toggler {
     margin-top: 8px;
     text-align: center;
+  }
+  .toggler {
+    font-size: 1.2rem;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+      &.active,&.active:hover {
+        color: rgb(67, 172, 106);
+      }
+    }
+  }
+  .controls {
     a {
       width: 40px;
       display: inline-block;
@@ -179,7 +197,7 @@ small {
 @media #{$large-up} { 
   .screen-container,.player-container {
     @extend .centered;
-    max-width: 960px;
+    max-width: 768px;
   }
   .screen-container {
     position: relative;

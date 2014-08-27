@@ -8,60 +8,22 @@ title: Denied - Skip Terrible Music
     <h2><i class="fa fa-asterisk"></i> Or any other band, song or album</h2>
     <p>Imagine listening to a great Spotify radio station or playlist, and all of a sudden that song or band you can't stand comes up. Don't you hate that? I sure do!</p>
     <p>This handy Mac app monitors Spotify and skips songs that match the filters that you've setup. Get Denied and enjoy the Christmas season, Top 40 playlists and Spotify radio without the annoying songs you don't like!</p>
+    <div class="text-center">
+      <a href="#mailinglist" class="button success radius"><i class="fa fa-envelope"></i> Notify Me On Release</a>
+    </div>
   </div>
   <div class="screen-container">
     <img src="/img/screen-rulesoverview.jpg" alt="Rules Overview">
   </div>
 </section>
 
-<section class="mailinglist">
-  <div class="container">
-    <h2><i class="fa fa-rocket"></i> Almost Done</h2>
-    <p>Denied is almost ready to go and will be available on the Mac App Store in the first half of September.</p>
-    <p>Want to be the first to know when it comes out? Sign up for the mailing list.</p>
-    {% include _mailinglist.html %}
-  </div>
-</section>
-
-<section id="filters" class="screenshot">
-  <div class="container">
-    <h2><i class="fa fa-crosshairs"></i> Super flexible filters</h2>
-    <p>Skip songs based on its artist, title or the album it appears on. You can even specify how keywords are matched: should the target contain the keywords, start or end with them or match the keywords exactly.</p>
-    <p>Just disable a filter to not skip songs that match it temporarily, or remove it completely.</p>
-  </div>
-  <div class="screen-container">
-    <img src="/img/screen-rule.jpg" alt="Adjust Filters">
-  </div>
-</section>
-
-<section id="notifications" class="screenshot">
-  <div class="container">
-    <h2><i class="fa fa-bullhorn"></i> Cool notifications</h2>
-    <p>Optionally receive notifications when a track is skipped and keep track of how often a filter has been used.</p>
-    <p>Yeah, statistics!</p>
-  </div>
-  <div class="screen-container">
-    <img src="/img/screen-notifications.jpg" alt="Notifications">
-  </div>
-</section>
-
-<section id="disabe" class="screenshot">
-  <div class="container">
-    <h2><i class="fa fa-toggle-on"></i> Easily switched off</h2>
-    <p>In the mood for some awful music? Just disable skipping for a moment.</p>
-  </div>
-  <div class="screen-container">
-    <img src="/img/screen-disable.jpg" alt="Temporarily Switch Off">
-  </div>
-</section>
-
 <section id="player">
   <div class="container">
-    <h2><i class="fa fa-flask"></i> Battle simulation</h2>
+    <h2><i class="fa fa-flask"></i> Skip simulation</h2>
     <p>This is a hyper realistic demo of how track skipping works. Pay attention.
   </div>
   <div class="player-container">
-    <p class="caption">Normally, Spotify would just play Nickelback. Now try this: <a class="toggle-denied" href="#">Skip Terrible Music</a>.</p>
+    <p class="caption">Normally, Spotify would just play Nickelback. See what happens when you toggle skipping.</p>
     <table>
       <tr>
         <th>&nbsp;</th>
@@ -84,7 +46,7 @@ title: Denied - Skip Terrible Music
         <td class="text-right">3:43</td>
         <td class="show-for-medium-up">Get Hurt</td>
       </tr>
-      <tr class="song should-skip">
+      <tr class="song should-skip skip">
         <td><i class="fa fa-play-circle-o"></i></td>
         <td>Rockstar</td>
         <td>Nickelback <span><i class="fa fa-frown-o"></i></span></td>
@@ -98,7 +60,7 @@ title: Denied - Skip Terrible Music
         <td class="text-right">3:52</td>
         <td class="show-for-medium-up">Gun</td>
       </tr>
-      <tr class="song should-skip">
+      <tr class="song should-skip skip">
         <td><i class="fa fa-play-circle-o"></i></td>
         <td>Friday</td>
         <td>Rebecca Black <span><i class="fa fa-frown-o"></i></span></td>
@@ -106,9 +68,46 @@ title: Denied - Skip Terrible Music
         <td class="show-for-medium-up">Friday</td>
       </tr>
     </table>
+    <div class="toggler">
+      <a href="#" class="toggle-denied"><i class="fa fa-toggle-on"></i> Skipping Enabled</a>
+    </div>
+    <!--
     <div class="controls">
       <a href="#" class="pause"><i class="fa fa-pause"></i></a>
     </div>
+    -->
+  </div>
+</section>
+
+<section id="filters" class="screenshot">
+  <div class="container">
+    <h2><i class="fa fa-crosshairs"></i> Super flexible filters</h2>
+    <p>Skip songs based on its artist, title or the album it appears on. You can even specify how keywords are matched: should the target contain the keywords, start or end with them or match the keywords exactly.</p>
+    <p>Just disable a filter to not skip songs that match it temporarily, or remove it completely.</p>
+  </div>
+  <div class="screen-container">
+    <img src="/img/screen-rule.jpg" alt="Adjust Filters">
+  </div>
+</section>
+
+<section id="notifications" class="screenshot">
+  <div class="container">
+    <h2><i class="fa fa-bullhorn"></i> Cool notifications</h2>
+    <p>Receive notifications when a track is skipped (can be disabled) and keep track of how often a filter has been used. 
+    <p>Yeah, statistics <i class="fa fa-bar-chart"></i>!</p>
+  </div>
+  <div class="screen-container">
+    <img src="/img/screen-notifications.jpg" alt="Notifications">
+  </div>
+</section>
+
+<section id="disabe" class="screenshot">
+  <div class="container">
+    <h2><i class="fa fa-toggle-on"></i> Easily switched off</h2>
+    <p>In the mood for some awful music? Just disable skipping for a moment.</p>
+  </div>
+  <div class="screen-container">
+    <img src="/img/screen-disable.jpg" alt="Temporarily Switch Off">
   </div>
 </section>
 
@@ -123,7 +122,7 @@ title: Denied - Skip Terrible Music
   </div>
 </section>
 
-<section class="mailinglist">
+<section id="mailinglist" class="mailinglist">
   <div class="container">
     <h2><i class="fa fa-rocket"></i> Start skipping</h2>
     <p>Denied is almost ready to go and will be available on the Mac App Store in the first half of September.</p>

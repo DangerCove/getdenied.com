@@ -45,9 +45,11 @@ class Player
       $('.controls i').removeClass('fa-pause').addClass('fa-play')
 
     if @denying()
-      $('.toggle-denied', @_element).html('Disable Denied')
+      $('.toggle-denied', @_element).addClass('active')
+      $('.toggle-denied', @_element).html('<i class="fa fa-toggle-on"></i> Skipping Enabled')
     else
-      $('.toggle-denied', @_element).html('Skip Terrible Music')
+      $('.toggle-denied', @_element).removeClass('active')
+      $('.toggle-denied', @_element).html('<i class="fa fa-toggle-off"></i> Skipping Disabled')
   next: ->
     # Determine current
     current = $($('tr.active', @_element)[0])
@@ -77,5 +79,9 @@ class Player
     @_interval = null
     @update_controls()
 
+# Player
 player = new Player($('#player'))
 player.play()
+
+# Smooth scrolling
+$('a.button').smoothScroll()
