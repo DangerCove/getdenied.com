@@ -32,6 +32,23 @@ a {
     text-decoration: none;
   }
 }
+.share {
+  margin-bottom: 1em;
+  .fb-like {
+    vertical-align: top;
+    .fb_iframe_widget span {
+      vertical-align: text-top !important;
+    }
+  }
+  .twitter-share-button {
+    margin-top: 4px;
+    margin-left: 1em;
+  }
+}
+
+ul { 
+  margin-left: 1rem;
+}
 
 section {
   margin-bottom: 64px;
@@ -90,21 +107,27 @@ small {
 }
 
 #header {
-  margin-bottom: 64px;
+  margin-bottom: 48px;
   text-align: center;
   background: url('/img/bg-header.jpg') no-repeat 50% 0;
   background-size: 100% 100%;
-  padding: 64px 0;
+  padding: 64px 0 16px;
   h1 {
     color: $primary-color;
-    font-size: 200%;
     line-height: 150%;
     margin: 0;
-    padding: 32px 16px 0;
+    padding: 32px 16px;
     .fa-asterisk {
       font-size: 1rem;
       vertical-align: text-top;
     }
+  }
+  p.subtitle {
+    display: block;
+    color: white;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0 16px;
   }
   small {
     color: $primary-color;
@@ -192,7 +215,11 @@ small {
 }
 
 #footer {
-  text-align: center;
+  padding: 0 0 32px;
+  .copyright {
+    display: block;
+    text-align: center;
+  }
   .disclaimer {
     color: #999;
   }
