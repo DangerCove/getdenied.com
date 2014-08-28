@@ -221,6 +221,15 @@ small {
   }
 }
 
+@media #{$medium-up} {
+  #header {
+    padding-top: 128px;
+    h1 {
+      padding-bottom: 96px;
+    }
+  }
+}
+
 @media #{$large-up} { 
   .screen-container,.player-container {
     @extend .centered;
