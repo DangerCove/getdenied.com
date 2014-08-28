@@ -36,13 +36,13 @@ a {
   margin-bottom: 1em;
   .fb-like {
     vertical-align: top;
+    margin-right: 1em;
     .fb_iframe_widget span {
       vertical-align: text-top !important;
     }
   }
   .twitter-share-button {
     margin-top: 4px;
-    margin-left: 1em;
   }
 }
 
@@ -211,7 +211,7 @@ small {
 }
 
 #footer {
-  padding: 0 0 32px;
+  padding-bottom: 32px;
   .copyright {
     display: block;
     text-align: center;
