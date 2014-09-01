@@ -95,6 +95,14 @@ small {
   }
 }
 
+.video-container {
+  iframe {
+    width: 100%;
+    height: 200px;
+    border: 0;
+  }
+}
+
 .container { 
   @include clearfix;
   @extend .centered;
@@ -228,12 +236,22 @@ small {
       padding-bottom: 96px;
     }
   }
+  .video-container {
+    iframe {
+      height: 380px;
+    }
+  }
 }
 
 @media #{$large-up} { 
-  .screen-container,.player-container {
+  .screen-container,.player-container,.video-container {
     @extend .centered;
     max-width: 768px;
+  }
+  .video-container {
+    iframe {
+      height: 440px;
+    }
   }
   .screen-container {
     position: relative;
