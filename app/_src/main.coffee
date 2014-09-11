@@ -1,3 +1,4 @@
+# Player
 class Player
   @_element: null
   @_interval: null
@@ -79,9 +80,21 @@ class Player
     @_interval = null
     @update_controls()
 
-# Player
 player = new Player($('#player'))
 player.play()
 
-# Smooth scrolling
-$('a.button').smoothScroll()
+# Listen to scrolling
+class TopMenu
+  @_element = null
+  constructor: (element) ->
+    @_element = element
+  check: (element) ->
+    el_y = element.offset().top + element.outerHeight()
+    $(window).scroll (e) =>
+      if $(window).scrollTop() > el_y
+        @_element.addClass('scrolled')
+      else
+        @_element.removeClass('scrolled')
+
+top_menu = new TopMenu($('#topbar'))
+top_menu.check($('#header'))

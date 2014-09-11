@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2014 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="appstore" unicode="&#xe801;" d="m50 259v122c0 11 9 20 21 20h215l-94-163h-121c-12 0-21 9-21 21z m154-250l-69-47c-9-6-16-2-15 9l10 80c1 11 10 15 20 10l53-31c10-5 10-15 1-21z m16 45l-53 30c-10 6-13 18-7 28l246 428c6 9 19 13 28 7l54-30c9-6 13-18 7-28l-247-428c-5-10-18-13-28-7z m188 184l94 163h54l77-163h-225z m306-48c-21 10-127 254-155 318-27 64-109 233-83 247 19 9 87-124 138-205 51-80 158-286 171-310 13-24-13-43-27-49-14-6-22-12-44-1z m70-112l-32 50c-7 11-3 23 7 29l31 16c11 5 24 1 30-10l25-49c6-11 2-25-8-31l-22-13c-10-6-24-3-31 8z m118-133c-7 21-58 23-81 55-23 32-4 49 4 56 93 53 77-111 77-111z m48 314c0-12-9-21-20-21h-108c-2 7-4 13-7 19-3 5-10 18-20 37-14 27-34 66-56 107h191c11 0 20-9 20-20v-122z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

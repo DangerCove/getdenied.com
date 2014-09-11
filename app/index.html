@@ -1,16 +1,25 @@
 ---
-layout: default
-title: Denied - Skip Terrible Music
+layout: home
+title: Skip Terrible Music
 ---
+
+<header id="header" class="home">
+
+  {% include _menu.html %}
+
+  <div class="icon-container">
+    <a href="/"><img class="icon" src="/img/icon_192x192@2x.png" alt="Denied App Icon"></a>
+  </div>
+  <h1 class="title"><span href="/" class="appname">{{ site.name }}</span> saves your ears from Nickelback <i class="fa fa-asterisk"></i></h1>
+  {% include _get.html %}
+  <p class="subtitle">Requires an <i class="fa fa-apple"></i> Mac running OS X 10.9 or up and Spotify.</p>
+</header>
 
 <section id="any-other" class="screenshot">
   <div class="container">
     <h2><i class="fa fa-asterisk"></i> or any other band, song or album</h2>
     <p>Imagine listening to a great Spotify radio station or playlist, and all of a sudden that song or band you can't stand comes up. So annoying!</p>
     <p>This handy Mac app monitors Spotify and skips songs that match filters that you've setup. Get Denied and enjoy Top 40 playlists, the Christmas season and Spotify radio without the songs you don't like.</p>
-    <div class="text-center">
-      <a href="#mailinglist" class="button success radius"><i class="fa fa-envelope"></i> Notify Me On Release</a>
-    </div>
   </div>
   <div class="screen-container">
     <img src="/img/screen-rulesoverview.jpg" alt="Rules Overview">
@@ -133,9 +142,9 @@ title: Denied - Skip Terrible Music
 
 <section id="mailinglist" class="mailinglist">
   <div class="container">
-    <h2><i class="fa fa-rocket"></i> Start skipping</h2>
-    <p>Denied is almost ready to go and will be available on the Mac App Store mid September of 2014.</p>
-    <p>Want to be the first to know when it comes out? Sign up for the mailing list and <a href="https://twitter.com/deniedapp" class="twitter-follow-button" data-show-count="false">follow @deniedapp</a>.</p>
+    <h2><i class="fa fa-fax"></i> Stay up-to-date</h2>
+    <p>Want to be the first to know when it new features come out?</p>
+    <p>Sign up for the mailing list and <a href="https://twitter.com/deniedapp" class="twitter-follow-button" data-show-count="false">follow @deniedapp</a>.</p>
     {% include _mailinglist.html %}
   </div>
 </section>
@@ -149,3 +158,4 @@ title: Denied - Skip Terrible Music
   </ul>
 </div>
 -->
+
