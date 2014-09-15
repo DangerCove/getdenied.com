@@ -105,7 +105,7 @@ $('a.download').on('click', (e) ->
   # Show overlay
   $('#download').addClass('active')
 
-  e.preventDefault()
+  # e.preventDefault()
   )
 $('.close', '#download').on('click', (e) ->
 
