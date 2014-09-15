@@ -8,7 +8,7 @@ gems:
 
 url: http://www.getdenied.com
 name: DENIED
-title: Denied - Skip Terrible Music
+title: Denied -
 description: Denied saves your ears from music you can't stand. Skip songs by artist, title or album.
 keywords: spotify,skip,terrible,music,radio,playlist,next,itunes,remote,control,song,album,track,band,artist,filter,menu,disable
 author:
@@ -35,7 +35,10 @@ permalink: /blog/:year/:month/:day/:title/
 
 urls:
   update: http://update.getdenied.com
-  download: http://download.getdenied.com/Denied-latest.zip
+  download: /download
+  # download: http://localhost:8888/Denied-v1.0.0.zip
+  appstore: https://itunes.apple.com/us/app/denied-skip-terrible-music/id909257784?ls=1&mt=12
+  buy: https://sites.fastspring.com/dangercove/instant/denied
 
 analytics:
   GA:

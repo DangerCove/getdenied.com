@@ -98,3 +98,18 @@ class TopMenu
 
 top_menu = new TopMenu($('#topbar'))
 top_menu.check($('#header'))
+
+# Downloads
+$('a.download').on('click', (e) ->
+
+  # Show overlay
+  $('#download').addClass('active')
+
+  e.preventDefault()
+  )
+$('.close', '#download').on('click', (e) ->
+
+  $('#download').removeClass('active')
+
+  e.preventDefault()
+  )
