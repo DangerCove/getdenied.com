@@ -3,6 +3,9 @@
 # 2. config.build.yml
 # 3. config.yml
 
+gems:
+  - jekyll-sitemap
+
 url: http://www.getdenied.com
 name: DENIED
 title: Denied - Skip Terrible Music
