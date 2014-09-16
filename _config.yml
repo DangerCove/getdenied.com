@@ -37,8 +37,9 @@ urls:
   update: http://update.getdenied.com
   download: /download
   # download: http://localhost:8888/Denied-v1.0.0.zip
-  appstore: https://itunes.apple.com/us/app/denied-skip-terrible-music/id909257784?ls=1&mt=12
-  buy: https://sites.fastspring.com/dangercove/instant/denied
+  appstore: /appstore
+  buy: /buy
+  presskit: /presskit
 
 analytics:
   GA:
