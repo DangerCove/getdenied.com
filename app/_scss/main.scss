@@ -96,6 +96,17 @@ a.egg {
     100% { transform: rotateZ(6deg); }
 }
 
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 910;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+}
+
 #download {
   z-index: 1001;
   position: fixed;
@@ -110,6 +121,7 @@ a.egg {
   box-shadow: 0 2px 8px rgba(0,0,0,.25);
   transition-property: top, bottom;
   transition-duration: 0.5s;
+  text-align: center;
   @media #{$small-only} {
     display: none;
   }
@@ -229,7 +241,7 @@ small {
 
 
 .top-bar {
-  z-index: 999;
+  z-index: 900;
   position: absolute;
   text-align: left;
   width: 100%;

@@ -100,16 +100,22 @@ top_menu = new TopMenu($('#topbar'))
 top_menu.check($('#header'))
 
 # Downloads
+
+# Add overlay
+$('body').append('<div id="overlay"></div>');
+
 $('a.download').on('click', (e) ->
 
   # Show overlay
   $('#download').addClass('active')
+  $('#overlay').fadeIn();
 
   # e.preventDefault()
   )
 $('.close', '#download').on('click', (e) ->
 
   $('#download').removeClass('active')
+  $('#overlay').fadeOut();
 
   e.preventDefault()
   )
