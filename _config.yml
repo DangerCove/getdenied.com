@@ -14,6 +14,7 @@ keywords: spotify,skip,terrible,music,radio,playlist,next,itunes,remote,control,
 author:
   name: Boy van Amstel
   email: boy@dangercove.com
+price: $6.99
 
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
