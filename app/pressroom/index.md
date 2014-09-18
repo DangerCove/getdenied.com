@@ -7,7 +7,7 @@ The Hague, The Netherlands — September 18th 2014 — Danger Cove today release
 
 Tracks can be skipped by their artist, title or album, allowing one to enjoy Top 40 playlists, the Christmas season and Spotify® Radio without being confronted with undesirable music.
 
-The flexible rules can also be used to skip over certain types of tracks, such as skits or bonus content on albums. Setting up rules creatively can really influence preprogrammed listening experiences like Spotify® Radio, albums and public playlists.
+The flexible rules can also be used to skip over certain types of tracks, such as skits or bonus content on albums. Setting up rules creatively can really improve preprogrammed listening experiences like Spotify® Radio, albums and public playlists.
 
 ## Denied Features
 - Skip by artist, title or album.
