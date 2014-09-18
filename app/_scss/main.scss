@@ -71,10 +71,10 @@ a.egg {
   &:hover,&:active {
     text-decoration: none;
     i,i:before {
-      animation-name: wiggle;
-      animation-duration: .4s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease;      
+      -webkit-animation: wiggle .4s infinite;
+      -moz-animation: wiggle .4s infinite;
+      -o-animation: wiggle .4s infinite;
+      animation: wiggle .4s infinite;
     }
   }
   i {
@@ -91,6 +91,21 @@ a.egg {
 }
 
 @-webkit-keyframes wiggle {
+    0% { -webkit-transform: rotateZ(6deg); transform: rotateZ(6deg); }
+    50% { -webkit-transform: rotateZ(-6deg); transform: rotateZ(-6deg); }
+    100% { -webkit-transform: rotateZ(6deg); transform: rotateZ(6deg); }
+}
+@-moz-keyframes wiggle {
+    0% { transform: rotateZ(6deg); }
+    50% { transform: rotateZ(-6deg); }
+    100% { transform: rotateZ(6deg); }
+}
+@-o-keyframes wiggle {
+    0% { transform: rotateZ(6deg); }
+    50% { transform: rotateZ(-6deg); }
+    100% { transform: rotateZ(6deg); }
+}
+@keyframes wiggle {
     0% { transform: rotateZ(6deg); }
     50% { transform: rotateZ(-6deg); }
     100% { transform: rotateZ(6deg); }
