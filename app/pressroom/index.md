@@ -5,7 +5,9 @@ title: Denied, skip terrible music
 
 The Hague, The Netherlands — September 18th 2014 — Danger Cove today released Denied for Mac®. Denied sees what's playing in the Spotify® desktop app and automatically skips any song that matches customizable rules.
 
-Tracks can be skipped by their artist, title or album, allowing one to enjoy Top 40 playlists, the Christmas season and Spotify® radio without being confronted with undesirable music.
+Tracks can be skipped by their artist, title or album, allowing one to enjoy Top 40 playlists, the Christmas season and Spotify® Radio without being confronted with undesirable music.
+
+The flexible rules can also be used to skip over certain types of tracks, such as skits or bonus content on albums. Setting up rules creatively can really influence preprogrammed listening experiences like Spotify® Radio, albums and public playlists.
 
 ## Denied Features
 - Skip by artist, title or album.
@@ -15,14 +17,13 @@ Tracks can be skipped by their artist, title or album, allowing one to enjoy Top
 - Quickly suppress rules or temporarily stop skipping entirely.
 
 ## Pricing and Availability
-Denied is set to release automatically by the Mac App Store on Thursday, September 18th. It's designed for Mac OS X and requires OS X 10.9 or newer.
-
-Price: $6.99 / £4.99 / €5,99<br>
-A free trial version, limited to three rules, will be available from the website.
-
-Website: [http://www.getdenied.com](http://www.getdenied.com)
+Denied is available on the Mac App Store for just $6.99 / £4.99 / €5,99. Denied is designed for Mac OS X and requires OS X 10.9 or newer.
 
 App Store Link: [https://itunes.apple.com/us/app/denied-skip-terrible-music/id909257784?ls=1&mt=12](https://itunes.apple.com/us/app/denied-skip-terrible-music/id909257784?ls=1&mt=12)
+
+A free trial version — limited to three rules — is available from the website.
+
+Website: [http://www.getdenied.com](http://www.getdenied.com)
 
 ## Requirements
 
