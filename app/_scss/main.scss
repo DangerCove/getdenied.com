@@ -7,6 +7,7 @@ $app-fontfamily: 'Axis', 'Helvetica Neue', 'Helvetica', 'Arial', 'Sans-serif';
 $small-fontsize: .8rem;
 $button-fontsize: 1.4rem;
 $primary-color: #D94242;
+$primary-color-hover: #CF3F3F;
 $approve-color: #4BB000;
 
 body,h1,h2,h3,h4,h5,h6 {
@@ -70,6 +71,7 @@ a.egg {
   color: white;
   &:hover,&:active {
     text-decoration: none;
+    background-color: $primary-color-hover;
   }
   i {
     margin-right: .5rem;
@@ -77,12 +79,16 @@ a.egg {
 }
 .get-container {
   margin-bottom: 48px;
-  // a:hover,a:active {
-  //   box-shadow: 0 2px 8px rgba(180,66,66,0.5);
-  // }
+  a:hover,&:active {
+    border-color: $primary-color-hover !important;
+  }
   a.download {
     background: transparent;
     color: $primary-color;
+    &:hover,&:active {
+      color: $primary-color-hover;
+      background-color: transparent;
+    }
   }
 }
 
