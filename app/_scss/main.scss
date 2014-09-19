@@ -7,7 +7,6 @@ $app-fontfamily: 'Axis', 'Helvetica Neue', 'Helvetica', 'Arial', 'Sans-serif';
 $small-fontsize: .8rem;
 $button-fontsize: 1.4rem;
 $primary-color: #D94242;
-$primary-color-shadow: #8B1717;
 $approve-color: #4BB000;
 
 body,h1,h2,h3,h4,h5,h6 {
@@ -20,6 +19,7 @@ h1,h2 {
 }
 
 a {
+  transition: all .2s linear;
   &,&:hover {
     color: $primary-color;
   }
@@ -65,17 +65,11 @@ a.egg {
   padding: 16px 32px;
   font-size: $button-fontsize;
   margin: 0 8px;
-  border: transparent 1px solid;
+  border: $primary-color 1px solid;
   background: $primary-color;
   color: white;
   &:hover,&:active {
     text-decoration: none;
-    i,i:before {
-      -webkit-animation: wiggle .4s infinite;
-      -moz-animation: wiggle .4s infinite;
-      -o-animation: wiggle .4s infinite;
-      animation: wiggle .4s infinite;
-    }
   }
   i {
     margin-right: .5rem;
@@ -83,32 +77,13 @@ a.egg {
 }
 .get-container {
   margin-bottom: 48px;
+  // a:hover,a:active {
+  //   box-shadow: 0 2px 8px rgba(180,66,66,0.5);
+  // }
   a.download {
-    border: $primary-color 1px solid;
     background: transparent;
     color: $primary-color;
   }
-}
-
-@-webkit-keyframes wiggle {
-    0% { -webkit-transform: rotateZ(6deg); transform: rotateZ(6deg); }
-    50% { -webkit-transform: rotateZ(-6deg); transform: rotateZ(-6deg); }
-    100% { -webkit-transform: rotateZ(6deg); transform: rotateZ(6deg); }
-}
-@-moz-keyframes wiggle {
-    0% { transform: rotateZ(6deg); }
-    50% { transform: rotateZ(-6deg); }
-    100% { transform: rotateZ(6deg); }
-}
-@-o-keyframes wiggle {
-    0% { transform: rotateZ(6deg); }
-    50% { transform: rotateZ(-6deg); }
-    100% { transform: rotateZ(6deg); }
-}
-@keyframes wiggle {
-    0% { transform: rotateZ(6deg); }
-    50% { transform: rotateZ(-6deg); }
-    100% { transform: rotateZ(6deg); }
 }
 
 #overlay {
