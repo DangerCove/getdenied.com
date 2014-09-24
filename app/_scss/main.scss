@@ -10,6 +10,10 @@ $primary-color: #D94242;
 $primary-color-hover: #CF3F3F;
 $approve-color: #4BB000;
 
+@function grayscale($value) {
+  @return #{ "grayscale(" + $value + ")" };
+}
+
 body,h1,h2,h3,h4,h5,h6 {
   font-family: $default-fontfamily;
   font-weight: normal;
@@ -156,6 +160,53 @@ a.egg {
   }
 }
 
+#coverage {
+  text-align: center;
+  .articles {
+    list-style: none;
+    margin: 2rem 0 0 0;
+    li {
+      display: inline-block;
+      margin: 2rem;
+      img {
+        max-height: 64px;
+        @media #{$medium-up} {
+          filter: grayscale(80%);
+          opacity: .5;
+          transition: all .2s linear;
+        }
+      }
+      a:hover,a:active {
+        img {
+          @media #{$medium-up} {
+            filter: none;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+#tweets {
+  h3 {
+    text-align: center;
+  }
+  .container {
+    max-width: 960px;
+  }
+  .tweets {
+    list-style: none;
+    li {
+      margin-top: 2rem;
+      @media #{$medium-up} {
+        float: left;
+        width: 444px;
+        margin: 1rem 10px 0 10px;
+      }
+    }
+  }
+}
 
 section {
   margin-bottom: 64px;
@@ -168,9 +219,18 @@ small {
   font-size: $small-fontsize;
 }
 
-.mailinglist {
+.banded {
   background: #eee;
+}
+.bordered {
+  border-top: #eee 1px solid;
+  border-bottom: #eee 1px solid;
+}
+.banded,.bordered {
   padding: 32px 0;
+}
+
+.mailinglist {
   form {
     @extend .centered;
     margin-top: 32px;
