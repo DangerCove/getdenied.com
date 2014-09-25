@@ -1,3 +1,6 @@
+# Initialize Foundation
+$(document).foundation();
+
 # Player
 class Player
   @_element: null
