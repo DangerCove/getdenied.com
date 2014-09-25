@@ -4,11 +4,17 @@ layout: default
 
 {% include _header.html %}
 
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<article class="post container">
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
 
-<div class="post container">
-{{ content }}
-</div>
+  {{ content }}
+
+  <footer>
+    <p class="date">{{ page.date | date_to_long_string }}</p>
+    <p>Like what you're reading, want to give feedback or share your views? Reply to <a href="https://www.twitter.com/{{ site.author.twitter }}" target="_blank">{{ site.author.twitter }}</a> on Twitter.
+  </footer>
+</article>
 
 {% include _footer.html %}

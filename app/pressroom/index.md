@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Denied, skip terrible music
+description: The Hague, The Netherlands — September 18th 2014 — Danger Cove today released Denied for Mac®.
 ---
 
 The Hague, The Netherlands — September 18th 2014 — Danger Cove today released Denied for Mac®. Denied sees what's playing in the Spotify® desktop app and automatically skips any song that matches customizable rules.

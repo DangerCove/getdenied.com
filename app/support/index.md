@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Support
+description: Need help setting up? Read through these frequently asked questions, chances are you'll find your answer there.
 ---
 
 Need help setting up? Read through these frequently asked questions, chances are you'll find your answer there.
