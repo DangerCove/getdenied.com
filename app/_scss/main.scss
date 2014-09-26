@@ -467,6 +467,11 @@ small {
   .disclaimer {
     color: #999;
   }
+  .share {
+    .fb_iframe_widget span {
+      vertical-align: bottom !important;
+    }
+  }
 }
 
 .uservoice {
