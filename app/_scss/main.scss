@@ -308,17 +308,18 @@ small {
   top: 0;
   padding: 8px 0;
   li {
-    font-size: 1rem;
+    font-size: .8rem;
+    @media #{$medium-up} {
+      font-size: 1rem;
+    }
     line-height: 150%;
   }
   &.scrolled {
-    @media #{$medium-up} {
-      z-index: 1001;
-      box-shadow: 0 2px 4px rgba(0,0,0,.25);
-      position: fixed;
-      background: rgba(255,255,255,.95);
-      animation: 0.2s fadeIn forwards;
-    }
+    z-index: 1001;
+    box-shadow: 0 2px 4px rgba(0,0,0,.25);
+    position: fixed;
+    background: rgba(255,255,255,.95);
+    animation: 0.2s fadeIn forwards;
   }
   ul {
     margin-bottom: 0;
@@ -482,18 +483,21 @@ small {
 ol.posts {
   list-style: none;
   margin: 0;
-  > li {
-    border-bottom: #eee 1px solid;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-  }
 }
 article {
+  border-bottom: #eee 1px solid;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
   ul,ol {
     margin-bottom: 1rem !important;
   }
   .date {
     color: #999;
+  }
+  img {
+    border: #eee 1px solid;
+    padding: 4px;
+    border-radius: 4px;
   }
 }
 
