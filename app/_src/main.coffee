@@ -113,12 +113,19 @@ $('a.download').on('click', (e) ->
   $('#download').addClass('active')
   $('#overlay').fadeIn();
 
+  # Track event
+  _gaq.push(['_trackEvent', 'Downloads', 'download_overlay_show'])
+
   # e.preventDefault()
   )
 $('.close', '#download').on('click', (e) ->
 
+  # Hide overlay
   $('#download').removeClass('active')
   $('#overlay').fadeOut();
+
+  # Track event
+  _gaq.push(['_trackEvent', 'Downloads', 'download_overlay_close'])  
 
   e.preventDefault()
   )
