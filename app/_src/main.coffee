@@ -114,7 +114,7 @@ $('a.download').on('click', (e) ->
   $('#overlay').fadeIn();
 
   # Track event
-  _gaq.push(['_trackEvent', 'Downloads', 'download_overlay_show'])
+  _gaq.push(['_trackEvent', 'Downloads', 'show_download_overlay', 'Show the download overlay'])
 
   # e.preventDefault()
   )
@@ -125,7 +125,7 @@ $('.close', '#download').on('click', (e) ->
   $('#overlay').fadeOut();
 
   # Track event
-  _gaq.push(['_trackEvent', 'Downloads', 'download_overlay_close'])  
+  _gaq.push(['_trackEvent', 'Downloads', 'close_download_overlay', 'Close the download overlay'])  
 
   e.preventDefault()
   )
