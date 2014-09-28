@@ -7,7 +7,7 @@ $app-fontfamily: 'Axis', 'Helvetica Neue', 'Helvetica', 'Arial', 'Sans-serif';
 $small-fontsize: .8rem;
 $button-fontsize: 1.4rem;
 $primary-color: #D94242;
-$primary-color-hover: #CF3F3F;
+$primary-color-hover: #BE1C1C;
 $approve-color: #4BB000;
 
 @function grayscale($value) {
@@ -73,6 +73,7 @@ a.egg {
   border: $primary-color 1px solid;
   background: $primary-color;
   color: white;
+  line-height: 100%;
   &:hover,&:active {
     text-decoration: none;
     background-color: $primary-color-hover;
@@ -93,6 +94,51 @@ a.egg {
       color: $primary-color-hover;
       background-color: transparent;
     }
+  }
+  .buy-container {
+    display: inline-block;
+    position: relative;
+    .sale-tag {
+      position: absolute;
+      top: -20px;
+      right: -50px;
+      @media #{$medium-up} {
+        top: -30px;
+        right: -96px;
+      }
+      opacity: 0;
+      animation: popin .5s forwards ease-in;
+      // animation-duration: .25s;
+      // animation-timing-function: ease-out;
+      // animation-fill-mode: forwards;
+      animation-delay: 1s;
+    }
+  }
+}
+
+@keyframes popin {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.sale-tag {
+  width: 80px;
+  height: 26px;
+  color: white;
+  text-align: right;
+  font-weight: bold;
+  font-size: .8rem;
+  line-height: 26px;
+  padding-right: .6rem;
+  background: url('/img/sale_tag.svg')  no-repeat;
+  background-size: cover;
+  transform: rotate(-15deg);
+  @media #{$medium-up} {
+    width: 120px;
+    height: 40px;
+    font-size: 1rem;
+    line-height: 40px;
+    padding-right: 1rem;
   }
 }
 
@@ -379,6 +425,9 @@ small {
     font-size: 1rem;
     margin: 0;
     padding: 0 16px;
+    strong {
+      font-size: 1.2rem;
+    }
   }
   small {
     color: $primary-color;
@@ -521,6 +570,9 @@ article {
     border: #eee 1px solid;
     padding: 4px;
     border-radius: 4px;
+  }
+  .egg {
+    margin-bottom: 1rem;
   }
 }
 

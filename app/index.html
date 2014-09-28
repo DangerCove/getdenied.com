@@ -12,15 +12,14 @@ title: Skip Terrible Music
   </div>
   <h1 class="title"><span class="appname">{{ site.name }}</span> saves your ears from Nickelback <i class="fa fa-asterisk"></i></h1>
   {% include _get.html %}
-  <p class="subtitle">Available on the Mac App Store for just {{ site.price }}. Requires OS X 10.9+ and Spotify.</p>
-  <p class="subtitle">The trial version allows you to create up to 3 rules and unlocks in place.</p>
+  <p class="subtitle">Available on the Mac App Store for just {% if site.sale %}<strike>{{ site.price }}</strike> <strong>{{ site.sale.price }}</strong>{% if site.sale.duration %}{{ site.sale.duration }}{% endif %}!{% else %}{{ site.price }}.{% endif %} Requires Mac OS X 10.9+ and Spotify.</p>
+  <p class="subtitle">The trial version allows you to create up to three rules and unlocks in place.</p>
 </header>
 
 <section id="any-other" class="screenshot">
   <div class="container">
     <h2><i class="fa fa-asterisk"></i> or any other band, song or album</h2>
-    <p>Imagine listening to a great Spotify radio station or playlist, and all of a sudden the song or band that you can't stand comes up. So annoying!</p>
-    <p>Denied for Mac monitors Spotify and automatically skips songs that match rules that you've setup.</p>
+    <p>Denied for Mac sees what you're playing in Spotify and automatically skips songs that match rules that you've setup.</p>
     <p>Tracks can be skipped by their artist, title or album, allowing you to enjoy Top 40 playlists, the Christmas season and Spotify radio without listening to music that you dislike.</p>
   </div>
   <div class="screen-container">
@@ -72,7 +71,8 @@ title: Skip Terrible Music
 <section id="filters" class="screenshot">
   <div class="container">
     <h2><i class="fa fa-crosshairs"></i> Super flexible rules</h2>
-    <p>Skip songs based on its artist, title or the album it appears on. You can even specify how keywords are matched: should the artist/title/album contain the keywords, start or end with them or match the keywords exactly.</p>
+    <p>Skip songs based on its artist, title or the album it appears on.</p>
+    <p>You can even specify how keywords are matched: should the artist/title/album contain the keywords, start or end with them or match the keywords exactly.</p>
   </div>
   <div class="screen-container">
     <img src="/img/screen-rule.jpg" alt="Adjust Rules">

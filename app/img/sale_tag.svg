@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="120px" height="40px" viewBox="0 0 120 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>sale_tag</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="sale_tag" sketch:type="MSArtboardGroup">
+            <path d="M53.0021821,1 C50.791838,1 47.4917359,1.95523391 45.6169347,3.14260803 L22.3830653,17.857392 C20.5146499,19.0407217 20.5082641,20.9552339 22.3830653,22.142608 L45.6169347,36.857392 C47.4853501,38.0407217 50.800691,39 53.0021821,39 L114.997818,39 C117.208162,39 119,37.2181492 119,35.0051562 L119,4.99484381 C119,2.7885525 117.199309,1 114.997818,1 L53.0021821,1 Z M41,23.8 C43.209139,23.8 45,22.098682 45,20 C45,17.901318 43.209139,16.2 41,16.2 C38.790861,16.2 37,17.901318 37,20 C37,22.098682 38.790861,23.8 41,23.8 Z" id="Rectangle-107" fill="#D94242" sketch:type="MSShapeGroup"></path>
+            <path d="M0.5,16.5 C0.5,16.5 3.56835938,30 6,30 C12.0838216,30 19.9161784,7 26,7 C28.8178711,7 40.5,16.5 40.5,16.5" id="Line" stroke="#D94242" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup" transform="translate(20.500000, 18.500000) scale(1, -1) translate(-20.500000, -18.500000) "></path>
+        </g>
+    </g>
+</svg>
