@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Denied is Out Now!"
-date: 2014-09-18 0:00:00
+date: 2014-09-18 1:00:00
 categories: [releases, announcements]
 description: Version 1.0.0 of Denied is now available as a free trial or via the Mac App Store!
 ---
@@ -16,6 +16,6 @@ Starting today, bands you can't stand will no longer annoy you while listening t
 - Keep track of how often a rule is used.
 - Quickly suppress rules or temporarily stop skipping entirely.
 
-If you're a member of the press, have a look at the [Press Kit](/presskit) and official [Press Release](/pressroom).
+If you're a member of the press, have a look at the [Press Kit](/presskit) and official [Press Release](/blog/2014/09/18/press-release).
 
 ![Denied Rules Overview](/img/screen-rulesoverview.jpg)

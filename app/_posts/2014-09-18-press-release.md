@@ -1,7 +1,9 @@
 ---
-layout: page
-title: Denied, skip terrible music
-description: The Hague, The Netherlands — September 18th 2014 — Danger Cove today released Denied for Mac®.
+layout: post
+title: "Press Release: Danger Cove today released Denied for Mac"
+date: 2014-09-18 0:00:00
+categories: [press releases]
+description: "The Hague, The Netherlands — September 18th 2014 — Danger Cove today released Denied for Mac®."
 ---
 
 The Hague, The Netherlands — September 18th 2014 — Danger Cove today released Denied for Mac®. Denied sees what's playing in the Spotify® desktop app and automatically skips any song that matches customizable rules.
@@ -9,6 +11,8 @@ The Hague, The Netherlands — September 18th 2014 — Danger Cove today release
 Tracks can be skipped by their artist, title or album, allowing one to enjoy Top 40 playlists, the Christmas season and Spotify® Radio without being confronted with undesirable music.
 
 The flexible rules can also be used to skip over certain types of tracks, such as skits or bonus content on albums. Setting up rules creatively can really improve preprogrammed listening experiences like Spotify® Radio, albums and public playlists.
+
+<!-- more -->
 
 ## Denied Features
 - Skip by artist, title or album.
