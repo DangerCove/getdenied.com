@@ -381,6 +381,9 @@ small {
       margin-right: .2rem;
     }
   }
+  a.is-current {
+    text-decoration: underline;
+  }
 }
 @keyframes fadeOut {
     0% {
