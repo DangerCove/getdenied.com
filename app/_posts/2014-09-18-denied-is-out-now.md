@@ -18,4 +18,4 @@ Starting today, bands you can't stand will no longer annoy you while listening t
 
 If you're a member of the press, have a look at the [Press Kit](/presskit) and official [Press Release](/blog/2014/09/18/press-release).
 
-![Denied Rules Overview](/img/screen-rulesoverview.jpg)
+![Denied Rules Overview](/blog/img/screen-rulesoverview.jpg)
