@@ -581,6 +581,12 @@ article {
     margin-bottom: 1rem;
   }
 }
+.rss-subscribe {
+  margin-bottom: 3rem;
+  p {
+    border-bottom: #eee 1px solid;
+  }
+}
 
 @media #{$small-only} {
   a.download {
