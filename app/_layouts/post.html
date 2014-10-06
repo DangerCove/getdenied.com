@@ -21,4 +21,29 @@ layout: default
   </footer>
 </article>
 
+<div class="pagination container show-for-medium-up">
+  <div class="row">
+    <div class="columns medium-5 text-left">
+      {% if page.previous %}
+        <a href="{{ page.previous.url }}" class="previous">&larr; {{ page.previous.title | truncatewords: 5 }}</a>
+      {% else %}
+        &nbsp;
+      {% endif %}
+    </div>
+    <div class="columns medium-2 text-center">
+      <a href="/news"><i class="fa fa-home"></i></a>
+    </div>
+    <div class="columns medium-5 text-right">
+      {% if page.next %}
+        <a href="{{ page.next.url }}" class="next">{{ page.next.title | truncatewords: 5 }} &rarr;</a>
+      {% else %}
+        &nbsp;
+      {% endif %}
+    </div>
+  </div>
+</div>
+<div class="container show-for-small-only text-center">
+  <a href="/news">Archive</a>
+</div>
+
 {% include _footer.html %}
