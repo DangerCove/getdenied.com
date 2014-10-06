@@ -4,6 +4,10 @@ title: News &amp; Updates
 description: News and updates about Denied for Mac and other music related articles.
 ---
 
+<div class="rss-subscribe">
+  <p><a href="{{site.url }}/feed.xml"><i class="fa fa-rss-square"></i> Subscribe</a> via RSS.</p>
+</div>
+
 <ol class="posts">
   {% for post in site.posts %}
     <li>
