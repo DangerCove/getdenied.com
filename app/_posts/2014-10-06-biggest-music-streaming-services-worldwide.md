@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "These Are The Biggest Music Streaming Services Worldwide"
+title: "These are the Biggest Music Streaming Services Worldwide"
 date: 2014-10-06 10:00:00
 categories: [streaming services, spotify, rdio]
 description: Spotify is currently the biggest music streaming service worldwide with over ten million users.

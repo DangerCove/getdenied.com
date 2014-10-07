@@ -16,8 +16,8 @@ author:
   email: boy@dangercove.com
   twitter: "@deniedapp"
 price: $6.99
-# sale: 
-#   price: $6.99
+sale: 
+  price: $2.99
 #   duration: ", only this week"
 
 # Grunt handles images and assets.
