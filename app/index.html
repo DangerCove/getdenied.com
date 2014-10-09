@@ -1,20 +1,8 @@
 ---
 layout: home
 title: Skip Terrible Music
+tagline: saves your ears from Nickelback <i class="fa fa-asterisk"></i>
 ---
-
-<header id="header" class="home">
-
-  {% include _menu.html %}
-
-  <div class="icon-container">
-    <a href="/"><img class="icon" src="/img/icon_192x192@2x.png" alt="Denied App Icon"></a>
-  </div>
-  <h1 class="title"><span class="appname">DENIED</span> saves your ears from Nickelback <i class="fa fa-asterisk"></i></h1>
-  {% include _get.html %}
-  <p class="subtitle">Available on the Mac App Store for just {% if site.sale %}<strike>{{ site.price }}</strike> <strong>{{ site.sale.price }}</strong>{% if site.sale.duration %}{{ site.sale.duration }}{% endif %}!{% else %}{{ site.price }}.{% endif %} Requires Mac OS X 10.9+.</p>
-  <p class="subtitle">The trial version allows you to create up to three rules and unlocks in place.</p>
-</header>
 
 <section id="any-other" class="screenshot">
   <div class="container">
@@ -23,7 +11,7 @@ title: Skip Terrible Music
     <p>Tracks can be skipped by their artist, title or album, allowing you to truly enjoy Top 40 playlists, the Christmas season, Rdio Stations and Spotify Radio.</p>
   </div>
   <div class="screen-container">
-    <img src="/img/macbook-half-rules-overview.jpg" alt="Rules Overview">
+    <img src="/img/macbook-rules-overview-with-caption.jpg" alt="Rules Overview">
   </div>
 </section>
 
@@ -31,22 +19,22 @@ title: Skip Terrible Music
   <h3>As seen on the internet <i class="fa fa-heart-o"></i></h3>
   <ul class="articles">
     <li>
-      <a data-tooltip data-options="disable_for_touch:true" aria-haspopup="true" class="has-tip" title="&quot;Banishment is harsh punishment any time it’s applied. But there is darkness out there, and everyone has those pressure points—songs that have found the Achilles heel in your ear. Save yourself and invoke the spirit of Dikembe Mutombo.&quot;" href="http://pigeonsandplanes.com/2014/09/spotify-songs-you-hate-can-now-be-denied-automatically/" target="_blank">
+      <a data-tooltip data-options="disable_for_touch:true" aria-haspopup="true" class="has-tip" title="&quot;[..] everyone has those pressure points—songs that have found the Achilles heel in your ear. Save yourself and invoke the spirit of Dikembe Mutombo.&quot;" href="http://pigeonsandplanes.com/2014/09/spotify-songs-you-hate-can-now-be-denied-automatically/" target="_blank">
         <img src="/img/logos/pigeons-and-planes.jpg" alt="http://pigeonsandplanes.com: SPOTIFY SONGS YOU HATE CAN NOW BE DENIED AUTOMATICALLY">
       </a>
     </li>
     <li>
-      <a data-tooltip data-options="disable_for_touch:true" aria-haspopup="true" class="has-tip" title="&quot;Music streaming service Spotify is awesome, but it has one problem. When you're listening to compilations or radio, you sometimes come across artists you hate. Denied fixes that by creating simple rules.&quot;" href="http://lifehacker.com/denied-automatically-skips-music-you-dont-like-in-spoti-1637540911" target="_blank">
+      <a data-tooltip data-options="disable_for_touch:true" aria-haspopup="true" class="has-tip" title="&quot;When you're listening to compilations or radio, you sometimes come across artists you hate. Denied fixes that by creating simple rules.&quot;" href="http://lifehacker.com/denied-automatically-skips-music-you-dont-like-in-spoti-1637540911" target="_blank">
         <img src="/img/logos/lifehacker.jpg" alt="lifehacker.com: Denied Automatically Skips Music You Don't Like in Spotify">
       </a>
     </li>
     <li>
-      <a data-tooltip data-options="disable_for_touch:true" aria-haspopup="true" class="has-tip" title="&quot;Let’s face it—Spotify’s radio algorithm isn’t perfect. You’ll be listening to Atoms For Peace radio, and next thing you know a little Deftones finds its way in there and before you know it you find yourself listening to Creed.&quot;" href="http://www.deathandtaxesmag.com/228438/new-app-lets-you-block-terrible-music-on-spotify/" target="_blank">
+      <a data-tooltip data-options="disable_for_touch:true" aria-haspopup="true" class="has-tip" title="&quot;[..] before you know it you find yourself listening to Creed.&quot;" href="http://www.deathandtaxesmag.com/228438/new-app-lets-you-block-terrible-music-on-spotify/" target="_blank">
         <img src="/img/logos/death-and-taxes.jpg" alt="deathandtaxesmag.com: New app lets you block terrible music on Spotify">
       </a>
     </li>
     <li>
-      <a data-tooltip data-options="disable_for_touch:true" aria-haspopup="true" class="has-tip" title="&quot;Poor Nickelback. Always getting hated on (click through on the product and you'll see what I mean).&quot;" href="http://www.producthunt.com/posts/denied" target="_blank">
+      <a data-tooltip data-options="disable_for_touch:true" aria-haspopup="true" class="has-tip" title="&quot;Poor Nickelback. Always getting hated on [..].&quot;" href="http://www.producthunt.com/posts/denied" target="_blank">
         <img src="/img/logos/product-hunt.jpg" alt="producthunt.com: Automatically skips music you don't like in Spotify">
       </a>
     </li>
@@ -61,22 +49,29 @@ title: Skip Terrible Music
 <section id="video">
   <div class="container">
     <h2><i class="fa fa-video-camera"></i> Found footage</h2>
-    <p>A 19 second clip showing how a brave music enthusiast saved his or her ears when a random unwanted track appeared in Spotify.</p>
+    <p>A 19 second clip showing how Denied saved someone's ears when a random unwanted track appeared in Spotify.</p>
   </div>  
-  <div class="video-container">
+  <div class="video-container slide-in">
     <iframe src="http://www.youtube.com/embed/-x-BViIJ5DQ?fs=1&amp;modestbranding=1&amp;showinfo=0&amp;autohide=1&amp;color=white&amp;rel=0&amp;vq=hd720" allowFullscreen></iframe>
   </div>
 </section>
 
-<section id="filters" class="screenshot">
-  <div class="container">
-    <h2><i class="fa fa-crosshairs"></i> Super flexible rules</h2>
-    <p>Skip a song based on its artist, title or the album it appears on.</p>
-    <p>You can even specify how keywords are matched: should the artist/title/album contain the keywords, start or end with them or match the keywords exactly.</p>
-  </div>
-  <div class="screen-container">
-    <img src="/img/macbook-half-skip-karaoke-live-versions.jpg" alt="Adjust Rules">
-  </div>
+<section id="tweets" class="bordered">
+  <h3>What you guys think <i class="fa fa-twitter"></i></h3>
+  <ul class="tweets container">
+    <li>
+      <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>These guys are awesome. They&#39;re on a mission to save Spotify users from bad music. <a href="http://t.co/bsKbNVjfn7">http://t.co/bsKbNVjfn7</a></p>&mdash; Aishwarya Hariharan (@ashpapoye) <a href="https://twitter.com/ashpapoye/status/514673712260321280">September 24, 2014</a></blockquote>
+    </li>
+    <li>
+      <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>This app ensures you’ll never have to hear that “Rude” song again: <a href="http://t.co/Rl72Rr1mpv">http://t.co/Rl72Rr1mpv</a> (you know, this one: <a href="http://t.co/Wixd8B3npj">http://t.co/Wixd8B3npj</a>)</p>&mdash; Huge (@hugeinc) <a href="https://twitter.com/hugeinc/status/509756707136753664">September 10, 2014</a></blockquote>
+    </li>
+    <li>
+      <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>This is just as exciting as the new iPhone. <a href="https://twitter.com/deniedapp">@deniedapp</a> <a href="https://twitter.com/hashtag/NoOneLikesNickelback?src=hash">#NoOneLikesNickelback</a> <a href="http://t.co/JqmMKVzccx">pic.twitter.com/JqmMKVzccx</a></p>&mdash; Nathan Ruff (@TheNathanRuff) <a href="https://twitter.com/TheNathanRuff/status/509474227159044096">September 9, 2014</a></blockquote>
+    </li>
+    <li>
+      <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>LOL! Never Listen to a Bad Song Again With the Anti-Shazam - <a href="http://t.co/pF7LrCkdN2">http://t.co/pF7LrCkdN2</a></p>&mdash; Sophie Serafino (@SophieSerafino) <a href="https://twitter.com/SophieSerafino/status/510488552887820288">September 12, 2014</a></blockquote>
+    </li>
+  </ul>
 </section>
 
 <section id="player">
@@ -138,45 +133,6 @@ title: Skip Terrible Music
       <a href="#" class="pause"><i class="fa fa-pause"></i></a>
     </div>
     -->
-  </div>
-</section>
-
-<section id="tweets" class="bordered">
-  <h3>What you guys think <i class="fa fa-twitter"></i></h3>
-  <ul class="tweets container">
-    <li>
-      <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>These guys are awesome. They&#39;re on a mission to save Spotify users from bad music. <a href="http://t.co/bsKbNVjfn7">http://t.co/bsKbNVjfn7</a></p>&mdash; Aishwarya Hariharan (@ashpapoye) <a href="https://twitter.com/ashpapoye/status/514673712260321280">September 24, 2014</a></blockquote>
-    </li>
-    <li>
-      <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>This app ensures you’ll never have to hear that “Rude” song again: <a href="http://t.co/Rl72Rr1mpv">http://t.co/Rl72Rr1mpv</a> (you know, this one: <a href="http://t.co/Wixd8B3npj">http://t.co/Wixd8B3npj</a>)</p>&mdash; Huge (@hugeinc) <a href="https://twitter.com/hugeinc/status/509756707136753664">September 10, 2014</a></blockquote>
-    </li>
-    <li>
-      <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>This is just as exciting as the new iPhone. <a href="https://twitter.com/deniedapp">@deniedapp</a> <a href="https://twitter.com/hashtag/NoOneLikesNickelback?src=hash">#NoOneLikesNickelback</a> <a href="http://t.co/JqmMKVzccx">pic.twitter.com/JqmMKVzccx</a></p>&mdash; Nathan Ruff (@TheNathanRuff) <a href="https://twitter.com/TheNathanRuff/status/509474227159044096">September 9, 2014</a></blockquote>
-    </li>
-    <li>
-      <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>LOL! Never Listen to a Bad Song Again With the Anti-Shazam - <a href="http://t.co/pF7LrCkdN2">http://t.co/pF7LrCkdN2</a></p>&mdash; Sophie Serafino (@SophieSerafino) <a href="https://twitter.com/SophieSerafino/status/510488552887820288">September 12, 2014</a></blockquote>
-    </li>
-  </ul>
-</section>
-
-<section id="notifications" class="screenshot">
-  <div class="container">
-    <h2><i class="fa fa-bullhorn"></i> Cool notifications</h2>
-    <p>Receive notifications when a track is skipped (can be disabled) and keep track of how often a rule has been used. 
-    <p>Yeah, statistics <i class="fa fa-bar-chart"></i>!</p>
-  </div>
-  <div class="screen-container">
-    <img src="/img/macbook-half-notifications-spotify.jpg" alt="Notifications">
-  </div>
-</section>
-
-<section id="disabe" class="screenshot">
-  <div class="container">
-    <h2><i class="fa fa-toggle-on"></i> Easily switched off</h2>
-    <p>In the mood for some awful music? Just disable skipping for a moment.</p>
-  </div>
-  <div class="screen-container">
-    <img src="/img/macbook-half-disable.jpg" alt="Temporarily Switch Off">
   </div>
 </section>
 
