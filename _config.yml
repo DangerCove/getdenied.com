@@ -48,6 +48,9 @@ urls:
   buy: /buy
   presskit: /presskit
 
+contact:
+  email: hello@getdenied.com
+
 analytics:
   GA:
     trackingID: UA-27275793-26
