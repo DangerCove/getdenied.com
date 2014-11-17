@@ -19,8 +19,8 @@ Here's how to setup remote controlling:
 1. Grab your phone or tablet and start Spotify;
 1. Start playing your favorite tune;
 1. Open Spotify on your desktop or laptop;
-1. On your mobile device press the Spotify Connect button;<br><br><img src="/blog/img/spotify-connect-button.jpg" alt="Spotify Connect Button" width="50%"><br><br>
-1. Select your computer from the overview;<br><br><img src="/blog/img/spotify-connect-select.jpg" alt="Select Desktop Spotify" width="50%"><br><br>
+1. On your mobile device press the Spotify Connect button;<br><br><img src="/blog/img/spotify-connect-button.jpg" alt="Spotify Connect Button" style="width:300px;"><br><br>
+1. Select your computer from the overview;<br><br><img src="/blog/img/spotify-connect-select.jpg" alt="Select Desktop Spotify" style="width:300px;"><br><br>
 1. Done!
 
 Now walk away as far as you can from your computer as your WiFi signal lets you and skip to the next song. So cool.
