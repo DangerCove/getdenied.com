@@ -6,12 +6,16 @@ layout: default
 
   {% include _menu.html %}
 
-  <div class="icon-container">
-    <a href="/"><img class="icon" src="/img/icon_192x192@2x.png" alt="Denied App Icon"></a>
+  <div class="intro row">
+    <div class="large-6 columns">
+      <img src="/img/now-playing@2x.jpg" alt="Denied showing Now Playing" width="334px" class="transparent-screenshot">
+    </div>
+    <div class="large-6 columns">
+      <h1 class="title"><span class="appname">DENIED</span> {{ page.tagline }}</h1>
+      {% include _get.html %}
+    </div>
   </div>
-  <h1 class="title"><span class="appname">DENIED</span> {{ page.tagline }}</h1>
-  {% include _get.html %}
-  <p class="subtitle">Available on the Mac App Store{% if site.price %} for just {% if site.sale.price %}<del>{{ site.price }}</del> <strong>{{ site.sale.price }}</strong>{% if site.sale.duration %}{{ site.sale.duration }}{% endif %}!{% else %}{{ site.price }}{% endif %}{% endif %}. Requires Mac OS X 10.9+.</p>
+  <p class="subtitle">Available on the Mac App Store{% if site.price %} for just {% if site.sale.price %}<del>{{ site.price }}</del> <strong>{{ site.sale.price }}</strong>{% if site.sale.duration %}{{ site.sale.duration }}{% endif %}!{% else %}{{ site.price }}{% endif %}{% endif %}. Requires Mac OS X 10.10+.</p>
   <p class="subtitle">The trial version allows you to create up to three rules and unlocks in place.</p>
 </header>
 
