@@ -1,0 +1,22 @@
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: $default-fontfamily;
+  font-weight: normal;
+  color: #333;
+}
+h1,h2 {
+  margin-bottom: 2rem;
+}
+
+a {
+  transition: all .2s linear;
+  &,&:hover {
+    color: $primary-color;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+small {
+  font-size: $small-fontsize;
+}

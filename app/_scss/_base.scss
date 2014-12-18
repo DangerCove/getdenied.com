@@ -1,0 +1,17 @@
+section {
+  margin-bottom: 64px;
+}
+body > div.container {
+  padding-bottom: 64px;
+}
+body > article.container {
+  margin-bottom: 64px;
+}
+
+.container { 
+  @include clearfix;
+  @extend .centered;
+  max-width: 768px;
+  padding: 0 16px;
+}
+
