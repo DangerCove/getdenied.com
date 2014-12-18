@@ -22,6 +22,12 @@ top_menu.check($('#header'))
 # Add overlay
 $('body').append('<div id="overlay"></div>');
 
+$('a.buy').on('click', (e) ->
+
+  # Track event
+  _gaq.push(['_trackEvent', 'Buy', 'goto_app_store', 'Go to the Mac App Store'])
+)
+
 $('a.download').on('click', (e) ->
 
   # Show overlay
