@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Fixing Spotify"
-date: 2015-02-25 10:00:00
-categories: [personal]
+date: 2015-03-26 14:00:00
+categories: [spotify]
 description: Apply a patch to Spotify to re-enable AppleScript
 ---
 
