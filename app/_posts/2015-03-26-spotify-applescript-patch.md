@@ -3,7 +3,7 @@ layout: post
 title: "Fixing Spotify"
 date: 2015-03-26 14:00:00
 categories: [spotify]
-description: Apply a patch to Spotify to re-enable AppleScript
+description: Apply a patch to Spotify to re-enable AppleScript.
 ---
 
 Spotify released a pretty major update a little while ago. While they introduced all kinds of interesting new features, they also broke some old ones, like support for remote controlling the desktop client using 'AppleScript'.
