@@ -32,5 +32,8 @@
   },
   "engines": {
     "node": "*"
+  },
+  "dependencies": {
+    "coffeelint": "^1.14.2"
   }
 }

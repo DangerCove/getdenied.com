@@ -9,5 +9,5 @@ description: This bit from Wayne's World that didn't actually inspire the name '
 Simon Blake on Product Hunt showed me this bit from Wayne's World that didn't actually inspire the name 'Denied', but totally could have:
 
 <div class="video-container">
-  <iframe src="http://www.youtube.com/embed/RD1KqbDdmuE?fs=1&amp;modestbranding=1&amp;showinfo=0&amp;autohide=1&amp;color=white&amp;rel=0&amp;vq=hd720" allowFullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/RD1KqbDdmuE?fs=1&amp;modestbranding=1&amp;showinfo=0&amp;autohide=1&amp;color=white&amp;rel=0&amp;vq=hd720" allowFullscreen></iframe>
 </div>
