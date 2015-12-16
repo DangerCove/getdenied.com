@@ -27,7 +27,7 @@ $.fn.extend
     return @each ()->
       topics = []
       $.ajax({
-        url: 'http://dangercove.uservoice.com/api/v1/topics/62350/articles.json?client=8KiWIaX9jEbsnUu7TDLQWg&per_page=100',
+        url: '//dangercove.uservoice.com/api/v1/topics/62350/articles.json?client=8KiWIaX9jEbsnUu7TDLQWg&per_page=100',
         dataType: 'jsonp',
         success: (data) ->
           $('.loading', element).hide()

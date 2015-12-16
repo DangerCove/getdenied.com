@@ -188,6 +188,7 @@
   background: white;
   padding: 8px 0;
   @media #{$medium-up} {
+    min-height: 80px;
     padding: 24px 0;
   }
   &.scrolled {

@@ -129,6 +129,7 @@
   margin-bottom: 48px;
   background: url('/img/bg-header.jpg') no-repeat 50% 0;
   background-size: 100% 100%;
+  min-height: 100px;
   &.home {
     background: none;
   }
