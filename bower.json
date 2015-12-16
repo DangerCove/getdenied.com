@@ -2,8 +2,8 @@
   "name": "deniedcom",
   "version": "0.0.0",
   "dependencies": {
-    "foundation": "~5.4.0",
-    "components-font-awesome": "~4.2.0",
+    "foundation": "~5.5.2",
+    "components-font-awesome": "~4.3.0",
     "jquery-smooth-scroll": "~1.5.0"
   }
 }

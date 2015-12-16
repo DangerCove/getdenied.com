@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem 'jekyll', '~>2.4.0'
+gem 'jekyll', '~>2.5'
 gem 'redcarpet'
-gem 'sass', '>=3.2'
-gem 'jekyll-sitemap', '>= 0.6.0'
+gem 'sass', '>=3.4'
+gem 'jekyll-sitemap'
