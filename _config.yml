@@ -6,7 +6,7 @@
 gems:
   - jekyll-sitemap
 
-url: http://www.getdenied.com
+url: https://www.getdenied.com
 name: Denied - Skip Terrible Music
 title: Denied -
 description: "Denied saves your ears from music you can't stand. Skip songs by artist, title or album."
@@ -34,14 +34,14 @@ show_drafts: true
 markdown: redcarpet
 #   extensions: ['fenced_code_blocks', 'smart']
 
-pygments: false
+highlighter: false
 
 permalink: /blog/:year/:month/:day/:title/
 
 excerpt_separator: <!-- more -->
 
 urls:
-  update: http://update.getdenied.com
+  update: https://update.getdenied.com
   download: /download
   # download: http://localhost:8888/Denied-v1.0.0.zip
   appstore: /appstore
