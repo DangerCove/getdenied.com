@@ -1,5 +1,5 @@
 # Initialize Foundation
-$(document).foundation();
+$(document).foundation()
 
 # Listen to scrolling
 class TopMenu
@@ -20,7 +20,7 @@ top_menu.check($('#header'))
 # Downloads
 
 # Add overlay
-$('body').append('<div id="overlay"></div>');
+$('body').append('<div id="overlay"></div>')
 
 $('a.buy').on('click', (e) ->
 
@@ -32,7 +32,7 @@ $('a.download').on('click', (e) ->
 
   # Show overlay
   $('#download').addClass('active')
-  $('#overlay').fadeIn();
+  $('#overlay').fadeIn()
 
   # Track event
   _gaq.push(['_trackEvent', 'Downloads', 'show_download_overlay', 'Show the download overlay'])
@@ -43,10 +43,10 @@ $('.close', '#download').on('click', (e) ->
 
   # Hide overlay
   $('#download').removeClass('active')
-  $('#overlay').fadeOut();
+  $('#overlay').fadeOut()
 
   # Track event
-  _gaq.push(['_trackEvent', 'Downloads', 'close_download_overlay', 'Close the download overlay'])  
+  _gaq.push(['_trackEvent', 'Downloads', 'close_download_overlay', 'Close the download overlay'])
 
   e.preventDefault()
   )
