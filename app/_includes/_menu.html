@@ -6,7 +6,7 @@
     <ul class="right inline-list">
       <li><a href="/" {% if current[1] == 'index.html' %}class='is-current'{% endif %}>Home</a></li>
       <li><a href="/blog" {% if current[1] == 'blog' %}class='is-current'{% endif %}>News</a></li>
-      <li><a href="/support" {% if current[1] == 'support' %}class='is-current'{% endif %}>Support</a></li>
+      <li><a href="/support" target="_blank" {% if current[1] == 'support' %}class='is-current'{% endif %}>Support</a></li>
       <!-- <li><a href="{{ site.urls.download }}" class="download" rel="nofollow">Download</a></li> -->
       <li class="show-for-medium-up"><a href="{{ site.urls.appstore }}" class="btn buy" target="_blank">Get Denied</a></li>
     </ul>
