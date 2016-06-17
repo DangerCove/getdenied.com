@@ -50,6 +50,3 @@ $('.close', '#download').on('click', (e) ->
 
   e.preventDefault()
   )
-
-# Uservoice
-$('.uservoice').uservoice()
