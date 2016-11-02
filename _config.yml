@@ -19,6 +19,7 @@ author:
 sale: false
   # price: $6.99
   # duration: ", only this week"
+trial: false
 
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',

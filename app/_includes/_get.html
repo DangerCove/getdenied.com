@@ -5,5 +5,5 @@
       {% if site.sale %}<span class="sale-tag">SALE!</span>{% endif %}
     </a>
   </div>
-  <a href="{{ site.urls.download }}" class="download" rel="nofollow"><i class="fa fa-download"></i> Download free trial</a>
+  {% if site.trial %}<a href="{{ site.urls.download }}" class="download" rel="nofollow"><i class="fa fa-download"></i> Download free trial</a>{% endif %}
 </div>
