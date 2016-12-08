@@ -114,6 +114,11 @@
   padding: 64px 0;
 }
 
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mailinglist {
   form {
     @extend .centered;
@@ -129,11 +134,6 @@
 
 .appname {
   font-family: $app-fontfamily;
-}
-
-.centered {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .caption {
@@ -161,7 +161,8 @@
       height: 380px;
     }
     @media #{$large-up} {
-      @extend .centered;
+      margin-left: auto;
+      margin-right: auto;
       max-width: 768px;
       height: 440px;
     }
