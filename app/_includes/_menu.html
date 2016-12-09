@@ -5,6 +5,7 @@
     <a href="/"><img src="/img/icon_128x128.png" alt="Denied App Icon" class="app-icon"></a>
     <ul class="right inline-list">
       <li><a href="/" {% if current[1] == 'index.html' %}class='is-current'{% endif %}>Home</a></li>
+      <li><a href="/rules" {% if current[1] == 'rules' %}class='is-current'{% endif %}>Rules</a></li>
       <li><a href="/blog" {% if current[1] == 'blog' %}class='is-current'{% endif %}>News</a></li>
       <li><a href="/support" target="_blank" {% if current[1] == 'support' %}class='is-current'{% endif %}>Support</a></li>
       <!-- <li><a href="{{ site.urls.download }}" class="download" rel="nofollow">Download</a></li> -->

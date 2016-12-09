@@ -1,0 +1,40 @@
+---
+layout: page
+title: Rules Manager
+---
+
+<div class="rules-manager">
+  <ul class="rules-manager__table">
+    <li class="row rules-manager__row">
+      <div class="columns medium-3 rules-manager__column rules-manager__column--field">
+        <select name="field" class="rules-manager__input">
+          <option value="0">Artist</option>
+          <option value="1">Title</option>
+          <option value="2">Album</option>
+        </select>
+      </div>
+      <div class="columns medium-3 rules-manager__column rules-manager__column--type">
+        <select name="type" class="rules-manager__input">
+          <option value="0">equals to</option>
+          <option value="1">contains</option>
+          <option value="2">starts with</option>
+          <option value="2">ends with</option>
+        </select>
+      </div>
+      <div class="columns medium-5 rules-manager__column rules-manager__column--keywords">
+        <input type="text" name="keywords" class="rules-manager__input" placeholder="keywords">
+      </div>
+      <div class="columns medium-1 rules-manager__column rules-manager__column--actions">
+        + 
+      </div>
+    </li>
+  </ul>
+  <div class="row rules-manager__controls-container">
+    <div class="columns medium-offset-2 medium-3 rules-manager__button-container rules-manager__button-container--load">
+      <a href="#" class="button secondary round rules-manager__button">Load...</a>
+    </div>
+    <div class="columns medium-5 end rules-manager__button-container rules-manager__button-container--download">
+      <a href="#" class="button round rules-manager__button">Save...</a>
+    </div>
+  </div>
+</div>

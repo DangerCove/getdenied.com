@@ -1,0 +1,13 @@
+.rules-manager {
+  &__table {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__column {
+    padding: 0;
+  }
+  &__button {
+    width: 100%;
+  }
+}
