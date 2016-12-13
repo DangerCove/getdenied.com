@@ -50,3 +50,4 @@ $('.close', '#download').on('click', (e) ->
 
   e.preventDefault()
   )
+
