@@ -6,7 +6,7 @@ categories: [releases, announcements]
 description: Version 1.0.0 of Denied is now available as a free trial or via the Mac App Store!
 ---
 
-Version 1.0.0 is now available as a <a href="{{ site.urls.download }}" class="download" rel="nofollow">free trial</a> or [via the Mac App Store]({{ site.urls.appstore }})!
+Version 1.0.0 is now available [via the Mac App Store]({{ site.urls.appstore }})!
 
 Starting today, bands you can't stand will no longer annoy you while listening to Spotify. With Denied you can:
 
