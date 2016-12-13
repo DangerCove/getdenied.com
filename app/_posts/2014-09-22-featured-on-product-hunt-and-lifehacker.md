@@ -10,7 +10,7 @@ This is so cool! Denied is [currently being featured on Product Hunt](http://pro
 
 <!-- more -->
 
-![Initial hits from Product Hunt and Lifehacker](/blog/img/producthunt-lifehacker-ga.jpg)
+![Initial hits from Product Hunt and Lifehacker](/news/img/producthunt-lifehacker-ga.jpg)
 
 Denied actually stayed in the top 5 products on the Product Hunt homepage for most of the day, gathering 85 upvotes in total and increasing the amount of downloads quite a bit. I'm even more content with the comments that were added.
 

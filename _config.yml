@@ -37,7 +37,7 @@ markdown: redcarpet
 
 highlighter: false
 
-permalink: /blog/:year/:month/:day/:title/
+permalink: /news/:title/
 
 excerpt_separator: <!-- more -->
 

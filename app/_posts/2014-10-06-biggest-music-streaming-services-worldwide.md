@@ -18,6 +18,6 @@ Spotify came out on top, with over ten million subscribers worldwide.
 
 While developing Denied I had no doubt in my mind that Spotify should be the first service it supports, but the localized popularity of music streaming services makes it tougher than you might expect to determine which service to add the list.
 
-![Billboard overview of biggest music streaming services worldwide](/blog/img/billboard-streamingservices-201409.jpg)
+![Billboard overview of biggest music streaming services worldwide](/news/img/billboard-streamingservices-201409.jpg)
 
 Source: [YourEDM]([YourEDM](http://www.youredm.com/2014/10/05/spotify-ranked-popular-streaming-service/), [Billboard](http://www.billboard.com/biz/articles/news/digital-and-mobile/6259149/which-music-streaming-service-is-the-biggest-worldwide)

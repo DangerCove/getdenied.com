@@ -14,7 +14,7 @@ The way Denied works, is that it picks up when Spotify, Rdio or iTunes change to
 
 I hate listening to the same song twice. Unless it's my favorite song that day, then I can listen to it all the time on repeat. Anyway, some of Spotify's (Artist) Radios have a limited supply of songs and you'll notice the same song playing three or four times a day. The new 'Originality Judge' will put an end to this. It checks if a song was played before in the past x hours and will skip tracks that aren't original enough.
 
-![Filter explicit songs with Denied](/blog/img/explicit-judge.jpg)
+![Filter explicit songs with Denied](/news/img/explicit-judge.jpg)
 
 The 'Explicit Content Judge' has been requested quite a few times and I'm happy to say he's on schedule to make his appearance in the next update as well. Trying to play most Hip Hop and Rap playlists and a few of my favorite Eminem tracks is impossible when he's on duty. Any song that's labeled explicit will be skipped automatically.
 

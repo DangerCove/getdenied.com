@@ -16,4 +16,4 @@ Denied is on sale for a limited time for just [$2.99](/appstore), down from $6.9
 
 <!-- more -->
 
-![The improved add-rule-flow allows you to create new rules much faster](/blog/img/macbook-half-skip-karaoke-live-versions.jpg)
+![The improved add-rule-flow allows you to create new rules much faster](/news/img/macbook-half-skip-karaoke-live-versions.jpg)

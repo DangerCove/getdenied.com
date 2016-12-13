@@ -8,4 +8,4 @@ description: I'm adding some animations to the latest build of Denied.
 
 I've added some animations to the latest build of Denied.
 
-![Animations in the latest build of Denied](/blog/img/animation-experiment.gif)
+![Animations in the latest build of Denied](/news/img/animation-experiment.gif)

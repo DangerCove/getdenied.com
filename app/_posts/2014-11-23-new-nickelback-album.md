@@ -14,4 +14,4 @@ After sitting through the entire album, I found "Miss You" the most cringeworthy
 
 Verdict: "No Fixed Address" probably won't make you a Nickelback fan if you weren't already and I'm not removing my Nickelback-rule in Denied just yet.
 
-![Nickelback - No Fixed Address](/blog/img/nickelback-no-fixed-address.jpg)
+![Nickelback - No Fixed Address](/news/img/nickelback-no-fixed-address.jpg)
