@@ -12,7 +12,7 @@ class RulesManager {
     var fileLink = fileContainer.getElementsByClassName('rules-manager__load')[0];
     var fileButton = fileContainer.getElementsByClassName('rules-manager__file')[0];
 
-    fileLink.addEventListener('click', function(e) {
+    fileLink.addEventListener('click', e => {
       e.preventDefault();
       fileButton.click();
     });
