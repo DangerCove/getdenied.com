@@ -52,7 +52,7 @@ module.exports = function (grunt) {
         files: [
           '.jekyll/**/*.html',
           '.tmp/css/**/*.css',
-          '{.tmp,<%= yeoman.app %>}/javascript/**/*.js',
+          '{.tmp,<%= yeoman.app %>}/js/**/*.js',
           '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
         ]
       }
