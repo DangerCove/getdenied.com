@@ -12,6 +12,6 @@ Denied uses AppleScript to retrieve information from Spotify and tell it to skip
 
 Luckily the bug is pretty simple to solve and Spotify has said they're planning to release a definitive fix pretty soon. Until then, you can use <a href="http://dangercove.github.io/Spotify-AppleScript-Patch/">this little patch I wrote</a> that will re-enable AppleScript with the click of a button. Super simple.
 
-![Spotify AppleScript Patch](/blog/img/screenshot-spotify-patch.jpg)
+![Spotify AppleScript Patch](/news/img/screenshot-spotify-patch.jpg)
 
 So, if you're experiencing any trouble using Denied with Spotify, <a href="http://dangercove.github.io/Spotify-AppleScript-Patch/">download the patch</a> and start saving your ears from crappy music again!

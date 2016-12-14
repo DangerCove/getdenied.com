@@ -12,6 +12,6 @@ Starting today [Rammstein](http://smarturl.it/rammsteinspotify)'s no longer part
 
 I am pretty stoked about this.
 
-![Rammstein on Spotify](/blog/img/spotify-rammstein.jpg)
+![Rammstein on Spotify](/news/img/spotify-rammstein.jpg)
 
 Source: [Spotify](https://news.spotify.com/us/2014/11/26/rammstein-now-on-spotify/)

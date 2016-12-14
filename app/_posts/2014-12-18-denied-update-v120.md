@@ -8,7 +8,7 @@ description: Denied v1.2.0 is out now with a brand new design and awesome featur
 
 I've teased the 1.2.0 update of Denied in a few previous posts and I'm super stoked to tell you that it's finally here!
 
-![Add songs from the Now Playing info](/blog/img/macbook-now-playing-with-caption.jpg)
+![Add songs from the Now Playing info](/news/img/macbook-now-playing-with-caption.jpg)
 
 <!-- more -->
 
@@ -27,7 +27,7 @@ Also:
 
 The best animation is probably the one you'll never see. It happens when you pause or un-pause your music player.
 
-![Animations in the latest build of Denied](/blog/img/animation-experiment.gif)
+![Animations in the latest build of Denied](/news/img/animation-experiment.gif)
 
 The gif above also shows the flow of adding a new rule based on the song that's currently playing. The final version shows the amount of rules you've setup. Pretty neat.
 
@@ -35,11 +35,11 @@ Skipping repeating songs and tracks that contains explicit content are the two m
 
 With the repeating song feature, you can set a timeout (between 30 minutes and 24 hours) and Denied will automatically skip over songs that have been played before in the set amount of time. I love this option when I listen to some Spotify Radio stations that have a limited amount of tracks.
 
-![Automatically skip repeating songs](/blog/img/macbook-skip-repeating-with-caption.jpg)
+![Automatically skip repeating songs](/news/img/macbook-skip-repeating-with-caption.jpg)
 
 The explicit content filter checks if songs are labeled as containing explicit lyrics. If you're listening with kids, or other sensitive ears, this feature will surely come in handy. Note that while it works with Spotify, Rdio and iTunes, the song has to be available in Spotify's library and you need to be connected to the internet.
 
-![Automatically skip explicit songs](/blog/img/macbook-skip-explicit-with-caption.jpg)
+![Automatically skip explicit songs](/news/img/macbook-skip-explicit-with-caption.jpg)
 
 I hope you enjoy this update! Feel free to contact me with feedback, questions or anything else via <a href="mailto:{{ site.contact.email }}">email</a> or on <a href="https://www.twitter.com/{{ site.contact.twitter }}">Twitter</a>.
 
