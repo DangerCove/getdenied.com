@@ -9,7 +9,7 @@ h1,h2 {
 
 a {
   transition: all .2s linear;
-  &,&:hover {
+  &,&:hover,&:focus {
     color: $primary-color;
   }
   &:hover {

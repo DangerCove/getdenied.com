@@ -48,6 +48,7 @@ urls:
   appstore: /appstore
   buy: /buy
   presskit: /presskit
+  review: macappstore://itunes.apple.com/app/id909257784?mt=12
 
 contact:
   email: hello@getdenied.com
