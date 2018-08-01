@@ -337,3 +337,10 @@ article {
     max-width: 128px;
   }
 }
+
+.dark-mode {
+  background-color: #070F24;
+  *:not(a) {
+    color: #fff;
+  }
+}

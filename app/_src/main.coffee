@@ -50,3 +50,21 @@ $('.close', '#download').on('click', (e) ->
 
   e.preventDefault()
   )
+
+# Dark Mode
+$(window).scroll (e) =>
+  el = $("#dark-mode")
+  topbar = $("#topbar")
+  pos = $(window).scrollTop()
+
+  trigger_pos = el.offset().top - 320
+  end_trigger_pos = el.offset().top + el.height() + topbar.height()
+
+  console.log end_trigger_pos
+
+  if pos > trigger_pos && pos < end_trigger_pos
+    el.addClass("dark-mode")
+    topbar.addClass("dark-mode")
+  else
+    el.removeClass("dark-mode")
+    topbar.removeClass("dark-mode")

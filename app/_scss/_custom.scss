@@ -1,3 +1,7 @@
+#topbar {
+  transition: background-color .5s ease;
+}
+
 #logo {
   text-align: center;
   margin: 32px 0;
@@ -121,6 +125,16 @@
       }
     }
   }
+}
+
+#dark-mode {
+  padding-top: 128px;
+  transition: background-color .5s ease;
+}
+
+#requirements.bordered {
+  border-bottom: 0;
+  padding-bottom: 0;
 }
 
 #header {
