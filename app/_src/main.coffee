@@ -63,19 +63,22 @@ class DarkMode
     secondary: { r: { start: 238, end: 11 }, g: { start: 238, end: 24 }, b: { start: 238, end: 57 } }
   }
   _space: {
-    transformation: 480,
+    transformation: 200,
     grace: 320
   }
   _trigger_positions: {
-    start: 0,
-    stop: 0,
+    apply: { start: 0, stop: 0 },
+    restore: { start: 0, stop: 0 }
   }
   constructor: (trigger_element) ->
     el = trigger_element
     topbar = @_elements.topbar
 
-    @_trigger_positions.start = el.offset().top - @_space.transformation
-    @_trigger_positions.stop = el.offset().top - @_space.grace
+    @_trigger_positions.apply.start = el.offset().top - (@_space.grace + @_space.transformation)
+    @_trigger_positions.apply.stop = el.offset().top - @_space.grace
+
+    @_trigger_positions.restore.start = el.offset().top + (el.height() * 4/5)
+    @_trigger_positions.restore.stop = el.offset().top + (el.height() * 4/5) + @_space.transformation
 
   _color_value: (color, percentage) ->
     Math.round(color.start - ((color.start - color.end) * percentage))
@@ -125,21 +128,30 @@ class DarkMode
     $(window).scroll (e) =>
 
       pos = $(window).scrollTop()
-      start_trigger_pos = @_trigger_positions.start
-      stop_trigger_pos = @_trigger_positions.stop
 
-      if pos > start_trigger_pos && pos < stop_trigger_pos
-        perc = (pos - start_trigger_pos) / (stop_trigger_pos - start_trigger_pos)
+      apply_pos = @_trigger_positions.apply
+      restore_pos = @_trigger_positions.restore
 
+      if pos > apply_pos.start && pos < apply_pos.stop
+        perc = (pos - apply_pos.start) / (apply_pos.stop - apply_pos.start)
+
+        @_reset_classes()
         @_apply_colors(perc)
 
-      else if pos > stop_trigger_pos
+      else if pos > apply_pos.stop && pos < restore_pos.start
         @_apply_classes()
         @_reset_colors()
+
+      else if pos > restore_pos.start && pos < restore_pos.stop
+        perc = 1 - (pos - restore_pos.start) / (restore_pos.stop - restore_pos.start)
+
+        @_reset_classes()
+        @_apply_colors(perc)
 
       else
         @_reset_classes()
         @_reset_colors()
 
 dark_mode = new DarkMode($('#dark-mode'))
-dark_mode.check()
+$(window).load ->
+  dark_mode.check()
