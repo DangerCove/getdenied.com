@@ -342,5 +342,9 @@ article {
   background-color: #070F24;
   *:not(a) {
     color: #fff;
+    border-color: #0b1839;
+  }
+  .banded {
+    background-color: #0b1839;
   }
 }
