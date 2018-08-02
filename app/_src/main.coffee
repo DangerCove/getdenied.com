@@ -3,9 +3,7 @@ $(document).foundation()
 
 # Listen to scrolling
 class TopMenu
-  @_element = null
-  constructor: (element) ->
-    @_element = element
+  constructor: (@_element) ->
   check: (element) ->
     el_y = element.offset().top + element.outerHeight()
     $(window).scroll (e) =>
@@ -52,60 +50,96 @@ $('.close', '#download').on('click', (e) ->
   )
 
 # Dark Mode
-$(window).scroll (e) =>
-  el = $('#dark-mode')
-  topbar = $('#topbar')
-  body = $('body')
-  all = $('*:not(a)')
-  banded = $('.banded')
+class DarkMode
+  _elements: {
+    body: $('body'),
+    topbar: $('#topbar'),
+    all: $('*:not(a)'),
+    banded: $('.banded')
+  }
+  _colors: {
+    background: { r: { start: 255, end: 7 }, g: { start: 255, end: 15 }, b: { start: 255, end: 36 } }
+    text: { r: { start: 51, end: 255 }, g: { start: 51, end: 255 }, b: { start: 51, end: 255 } }
+    secondary: { r: { start: 238, end: 11 }, g: { start: 238, end: 24 }, b: { start: 238, end: 57 } }
+  }
+  _space: {
+    transformation: 480,
+    grace: 320
+  }
+  _trigger_positions: {
+    start: 0,
+    stop: 0,
+  }
+  constructor: (trigger_element) ->
+    el = trigger_element
+    topbar = @_elements.topbar
 
-  pos = $(window).scrollTop()
-  transformation_space = 480
-  grace_space = 320
+    @_trigger_positions.start = el.offset().top - @_space.transformation
+    @_trigger_positions.stop = el.offset().top - @_space.grace
 
-  r = { background: { start: 255, end: 7 }, text: { start: 51, end: 255 }, secondary: { start: 238, end: 11 } }
-  g = { background: { start: 255, end: 15 }, text: { start: 51, end: 255 }, secondary: { start: 238, end: 24 } }
-  b = { background: { start: 255, end: 36 }, text: { start: 51, end: 255 }, secondary: { start: 238, end: 57 } }
+  _color_value: (color, percentage) ->
+    Math.round(color.start - ((color.start - color.end) * percentage))
 
-  start_trigger_pos = el.offset().top - transformation_space
-  stop_trigger_pos = el.offset().top - grace_space
-  end_trigger_pos = el.offset().top + (el.height() / 5 * 4) + topbar.height()
+  _apply: (color, element, property, percentage) ->
 
-  if pos > start_trigger_pos && pos < stop_trigger_pos
-    perc = (pos - start_trigger_pos) / (stop_trigger_pos - start_trigger_pos)
+    r = @_color_value(color.r, percentage)
+    g = @_color_value(color.g, percentage)
+    b = @_color_value(color.b, percentage)
+    
+    element.css(property, 'rgb(' + r + ',' + g + ',' + b + ')')
 
-    r_bg = Math.round(r.background.start - ((r.background.start - r.background.end) * perc))
-    g_bg = Math.round(g.background.start - ((g.background.start - g.background.end) * perc))
-    b_bg = Math.round(b.background.start - ((b.background.start - b.background.end) * perc))
+  _apply_colors: (percentage) ->
+    els = @_elements
 
-    r_txt = Math.round(r.text.start - ((r.text.start - r.text.end) * perc))
-    g_txt = Math.round(g.text.start - ((g.text.start - g.text.end) * perc))
-    b_txt = Math.round(b.text.start - ((b.text.start - b.text.end) * perc))
+    @_apply(@_colors.background, els.body, 'background-color', percentage)
+    @_apply(@_colors.background, els.banded, 'background-color', percentage)
+    @_apply(@_colors.background, els.topbar, 'background-color', percentage)
+    @_apply(@_colors.text, els.all, 'color', percentage)
+    @_apply(@_colors.secondary, els.all, 'border-color', percentage)
 
-    r_scnd = Math.round(r.secondary.start - ((r.secondary.start - r.secondary.end) * perc))
-    g_scnd = Math.round(g.secondary.start - ((g.secondary.start - g.secondary.end) * perc))
-    b_scnd = Math.round(b.secondary.start - ((b.secondary.start - b.secondary.end) * perc))
+  _apply_classes: ->
+    els = @_elements
 
-    body.css('background-color', 'rgb(' + r_bg + ',' + g_bg + ',' + b_bg + ')')
-    banded.css('background-color', 'rgb(' + r_bg + ',' + g_bg + ',' + b_bg + ')')
-    topbar.css('background-color', 'rgb(' + r_bg + ',' + g_bg + ',' + b_bg + ')')
-    all.css('color', 'rgb(' + r_txt + ',' + g_txt + ',' + b_txt + ')')
-    all.css('border-color', 'rgb(' + r_scnd + ',' + g_scnd + ',' + b_scnd + ')')
-  else if pos > stop_trigger_pos
-    body.addClass('dark-mode')
-    topbar.addClass('dark-mode')
+    els.body.addClass('dark-mode')
+    els.topbar.addClass('dark-mode')
 
-    body.css('background-color', '')
-    banded.css('background-color', '')
-    topbar.css('background-color', '')
-    all.css('color', '')
-    all.css('border-color', '')
-  else
-    body.removeClass('dark-mode')
-    topbar.removeClass('dark-mode')
+  _reset: (element, property) ->
+    element.css(property, '')
 
-    body.css('background-color', '')
-    banded.css('background-color', '')
-    topbar.css('background-color', '')
-    all.css('color', '')
-    all.css('border-color', '')
+  _reset_colors: ->
+    els = @_elements
+
+    @_reset(els.body, 'background-color')
+    @_reset(els.banded, 'background-color')
+    @_reset(els.topbar, 'background-color')
+    @_reset(els.all, 'color')
+    @_reset(els.all, 'border-color')
+
+  _reset_classes: ->
+    els = @_elements
+
+    els.body.removeClass('dark-mode')
+    els.topbar.removeClass('dark-mode')
+
+  check: ->
+    $(window).scroll (e) =>
+
+      pos = $(window).scrollTop()
+      start_trigger_pos = @_trigger_positions.start
+      stop_trigger_pos = @_trigger_positions.stop
+
+      if pos > start_trigger_pos && pos < stop_trigger_pos
+        perc = (pos - start_trigger_pos) / (stop_trigger_pos - start_trigger_pos)
+
+        @_apply_colors(perc)
+
+      else if pos > stop_trigger_pos
+        @_apply_classes()
+        @_reset_colors()
+
+      else
+        @_reset_classes()
+        @_reset_colors()
+
+dark_mode = new DarkMode($('#dark-mode'))
+dark_mode.check()
