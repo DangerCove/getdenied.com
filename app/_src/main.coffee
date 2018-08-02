@@ -58,9 +58,7 @@ $(window).scroll (e) =>
   pos = $(window).scrollTop()
 
   trigger_pos = el.offset().top - 320
-  end_trigger_pos = el.offset().top + el.height() + topbar.height()
-
-  console.log end_trigger_pos
+  end_trigger_pos = el.offset().top + (el.height() / 5 * 4) + topbar.height()
 
   if pos > trigger_pos && pos < end_trigger_pos
     topbar.addClass('dark-mode')
