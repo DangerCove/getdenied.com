@@ -58,7 +58,7 @@ class DarkMode
     secondary: { r: { start: 238, end: 11 }, g: { start: 238, end: 24 }, b: { start: 238, end: 57 } }
   }
   _space: {
-    transformation: 200,
+    transformation: 300,
     grace: 320
   }
   _trigger_positions: {
@@ -120,6 +120,9 @@ class DarkMode
     els.body.removeClass('dark-mode')
     els.topbar.removeClass('dark-mode')
 
+  _curve: (t) ->
+    return if t<.5 then 4*t*t*t else (t-1)*(2*t-2)*(2*t-2)+1
+
   check: ->
     $(window).scroll (e) =>
 
@@ -132,7 +135,7 @@ class DarkMode
         perc = (pos - apply_pos.start) / (apply_pos.stop - apply_pos.start)
 
         @_reset_classes()
-        @_apply_colors(perc)
+        @_apply_colors(@_curve(perc))
 
       else if pos > apply_pos.stop && pos < restore_pos.start
         @_apply_classes()
@@ -142,7 +145,7 @@ class DarkMode
         perc = 1 - (pos - restore_pos.start) / (restore_pos.stop - restore_pos.start)
 
         @_reset_classes()
-        @_apply_colors(perc)
+        @_apply_colors(@_curve(perc))
 
       else
         @_reset_classes()
