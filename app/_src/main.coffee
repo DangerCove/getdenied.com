@@ -1,20 +1,6 @@
 # Initialize Foundation
 $(document).foundation()
 
-# Listen to scrolling
-class TopMenu
-  constructor: (@_element) ->
-  check: (element) ->
-    el_y = element.offset().top + element.outerHeight()
-    $(window).scroll (e) =>
-      if $(window).scrollTop() > el_y
-        @_element.addClass('scrolled')
-      else
-        @_element.removeClass('scrolled')
-
-top_menu = new TopMenu($('#topbar'))
-top_menu.check($('#header'))
-
 # Downloads
 
 # Add overlay
@@ -49,7 +35,16 @@ $('.close', '#download').on('click', (e) ->
   e.preventDefault()
   )
 
-# Dark Mode
+class TopMenu
+  constructor: (@_element) ->
+  check: (element) ->
+    el_y = element.offset().top + element.outerHeight()
+    $(window).scroll (e) =>
+      if $(window).scrollTop() > el_y
+        @_element.addClass('scrolled')
+      else
+        @_element.removeClass('scrolled')
+
 class DarkMode
   _elements: {
     body: $('body'),
@@ -70,6 +65,7 @@ class DarkMode
     apply: { start: 0, stop: 0 },
     restore: { start: 0, stop: 0 }
   }
+
   constructor: (trigger_element) ->
     el = trigger_element
     topbar = @_elements.topbar
@@ -77,8 +73,8 @@ class DarkMode
     @_trigger_positions.apply.start = el.offset().top - (@_space.grace + @_space.transformation)
     @_trigger_positions.apply.stop = el.offset().top - @_space.grace
 
-    @_trigger_positions.restore.start = el.offset().top + (el.height() * 4/5)
-    @_trigger_positions.restore.stop = el.offset().top + (el.height() * 4/5) + @_space.transformation
+    @_trigger_positions.restore.start = el.offset().top + (el.outerHeight() * .5)
+    @_trigger_positions.restore.stop = el.offset().top + (el.outerHeight() * .5) + @_space.transformation
 
   _color_value: (color, percentage) ->
     Math.round(color.start - ((color.start - color.end) * percentage))
@@ -152,6 +148,11 @@ class DarkMode
         @_reset_classes()
         @_reset_colors()
 
-dark_mode = new DarkMode($('#dark-mode'))
-$(window).load ->
+# Initialize after page is done rendering
+$(window).bind('load', (e) ->
+  top_menu = new TopMenu($('#topbar'))
+  top_menu.check($('#header'))
+
+  dark_mode = new DarkMode($('#dark-mode'))
   dark_mode.check()
+)
