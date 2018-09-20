@@ -1,8 +1,6 @@
 # Initialize Foundation
 $(document).foundation()
 
-# Downloads
-
 # Add overlay
 $('body').append('<div id="overlay"></div>')
 
