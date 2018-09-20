@@ -2,7 +2,7 @@
 layout: post
 title: "Shipped an update!"
 date: 2018-07-12 08:00:00
-categories: []
+categories: [updates]
 description: I released an update that fixes a crashing bug.
 ---
 
@@ -11,6 +11,8 @@ Denied has been my favorite project since it first came out in 2014. Still, it t
 Maybe you've heard of [Apple's latest iteration of macOS called Mojave](https://www.apple.com/macos/mojave-preview/), due for release this fall. Besides a lot of behind-the-scenes upgrades, it comes with a brand new Dark Mode. I'm stoked about making Denied look awesome with it enabled.
 
 ![Keynote in macOS Mojave's Dark Mode](/news/img/mojave-darkmode@2x.jpg)
+
+<!-- more -->
 
 The update I just released also addresses a bug that could cause Denied to crash. According to my information this was the only one in the app and I'm happy that it's resolved. A side effect is that there's now a new option: "Pause When Filter Fails" which is off by default. This preference let's you indicate if you want to pause playback if Denied is unable to execute a filter. Currently, this only applies to the 'Skip explicit songs' filter as it could fail to retrieve the information from the internet.
 
