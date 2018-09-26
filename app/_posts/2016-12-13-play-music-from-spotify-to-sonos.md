@@ -10,5 +10,7 @@ I talked about this in the lat post, but the feature has finally been rolled out
 
 This is huge for every Sonos owner out there and opens the door for wirelessly streaming songs while still being able to skip songs that you dislike using Denied.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EuE5YozMBYs" frameborder="0" allowfullscreen></iframe>
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/EuE5YozMBYs" frameborder="0" allowfullscreen></iframe>
+</div>
 
