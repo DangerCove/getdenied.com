@@ -6,7 +6,7 @@ categories: [updates]
 description: I released an update that introduces Dark Mode and skipping disliked songs.
 ---
 
-<em>Note: A bug is preventing Denied from asking permission to check what you're playing on Mojave. An update has been submitted and should be live soon.</em>
+<em>Note: [Upgrade to version 1.5.1](/appstore) if you're on Mojave. It fixes a bug that prevented Denied from asking permission to access Spotify and iTunes.</em>
 
 Apple has released [the latest version of macOS](https://www.apple.com/macos/mojave/) to the public. The prominent new feature Mojave introduces is a new graphical theme, that Apple has dubbed Dark Mode. It's a gorgeous, rough, yet elegant way to present the operating system you're familiar with. Apps that customize their interface to take full advantage of Dark Mode look right at home and feel great to use. 
 
