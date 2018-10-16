@@ -205,6 +205,19 @@ module.exports = function (grunt) {
         }
       }
     },
+    useminPrepare: {
+      options: {
+        dest: '<%= yeoman.dist %>'
+      },
+      html: '<%= yeoman.dist %>/index.html'
+    },
+    usemin: {
+      options: {
+        assetsDirs: '<%= yeoman.dist %>',
+      },
+      html: ['<%= yeoman.dist %>/**/*.html'],
+      css: ['<%= yeoman.dist %>/css/**/*.css']
+    },
     htmlmin: {
       dist: {
         options: {
@@ -407,6 +420,7 @@ module.exports = function (grunt) {
     // Jekyll cleans files from the target directory, so must run first
     'jekyll:dist',
     'concurrent:dist',
+    'useminPrepare',
     'concat',
     'cssmin',
     'autoprefixer:dist',
@@ -414,6 +428,7 @@ module.exports = function (grunt) {
     'imagemin',
     'svgmin',
     'filerev',
+    'usemin',
     'htmlmin'
     ]);
 

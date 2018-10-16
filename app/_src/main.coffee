@@ -151,8 +151,8 @@ class DarkMode
 
 # Initialize after page is done rendering
 $(window).bind('load', (e) ->
-  top_menu = new TopMenu($('#topbar'))
-  top_menu.check($('#header'))
+  #top_menu = new TopMenu($('#topbar'))
+  #top_menu.check($('#header'))
 
   dark_mode = new DarkMode($('#dark-mode'))
   dark_mode.check()
