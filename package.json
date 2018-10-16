@@ -4,27 +4,26 @@
   "version": "0.0.0",
   "description": "Yeoman workflow for denied.com",
   "devDependencies": {
-    "grunt": "~1.0.1",
+    "grunt": "^1.0.3",
     "grunt-autoprefixer": "~3.0.3",
     "grunt-coffeelint": "~0.0.13",
     "grunt-concurrent": "~2.3.1",
     "grunt-contrib-clean": "~1.0.0",
-    "grunt-contrib-coffee": "~1.0.0",
+    "grunt-contrib-coffee": "^2.0.0",
     "grunt-contrib-concat": "~1.0.1",
-    "grunt-contrib-connect": "~1.0.2",
+    "grunt-contrib-connect": "^2.0.0",
     "grunt-contrib-copy": "~1.0.0",
     "grunt-contrib-csslint": "~2.0.0",
     "grunt-contrib-cssmin": "~1.0.2",
     "grunt-contrib-htmlmin": "~2.0.0",
-    "grunt-contrib-imagemin": "~1.0.0",
+    "grunt-contrib-imagemin": "^3.0.0",
     "grunt-contrib-jshint": "~1.1.0",
     "grunt-contrib-uglify": "~2.0.0",
-    "grunt-contrib-watch": "~1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-filerev": "~2.3.1",
-    "grunt-jekyll": "~0.4.2",
+    "grunt-jekyll": "^0.4.7",
     "grunt-sass": "~1.2.1",
     "grunt-svgmin": "~4.0.0",
-    "grunt-usemin": "~3.1.1",
     "jshint-stylish": "~2.2.1",
     "load-grunt-tasks": "~3.5.2",
     "node-sass": "~3.13.0",
@@ -34,6 +33,6 @@
     "node": "*"
   },
   "dependencies": {
-    "coffeelint": "^1.14.2"
+    "coffeelint": "^1.16.2"
   }
 }
