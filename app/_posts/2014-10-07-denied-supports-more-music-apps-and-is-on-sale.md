@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Denied is On Sale and Now Supports Rdio &amp; iTunes"
+title: "Denied is on sale and now supports Rdio &amp; iTunes"
 date: 2014-10-06 10:00:00
 categories: [updates, spotify, rdio, itunes]
 description: Denied version 1.1.0 is out now and adds support for Rdio and iTunes.

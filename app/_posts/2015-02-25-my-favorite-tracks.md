@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My Favorite Tracks"
+title: "My favorite tracks"
 date: 2015-02-25 10:00:00
 categories: [personal]
 description: Instead of focusing on songs I'd like to skip, here are some tracks that I love.

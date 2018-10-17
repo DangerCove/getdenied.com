@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Denied Featured On Spotify.com"
+title: "Denied featured on Spotify.com"
 date: 2015-04-14 12:00:00
 categories: [spotify]
 description: Denied is being featured on Spotify's developer showcase!

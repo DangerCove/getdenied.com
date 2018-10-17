@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mobile Spotify Remote Controls Desktop Spotify"
+title: "Mobile Spotify remote controls desktop Spotify"
 date: 2014-11-07 08:00:00
 categories: [spotify]
 description: Spotify on your mobile device can now remote control Spotify running on your desktop.

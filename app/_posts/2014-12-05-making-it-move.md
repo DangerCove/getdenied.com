@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Making It Move"
+title: "Making it move"
 date: 2014-12-05 20:00:00
 categories: [updates]
 description: I'm adding some animations to the latest build of Denied.

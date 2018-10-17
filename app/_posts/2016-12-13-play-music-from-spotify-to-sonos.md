@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Play Music From Spotify Straight to Sonos"
+title: "Play music from Spotify straight to Sonos"
 date: 2016-12-13 12:00:00
 categories: [sonos, spotify]
 description: Spotify Premium users can control their Sonos straight from the Spotify app.

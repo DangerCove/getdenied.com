@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spotify's Completely Fixed! (Almost)"
+title: "Spotify's completely fixed! (Almost)"
 date: 2015-04-01 15:00:00
 categories: [spotify]
 description: Spotify v1.0.3 fixes most of the AppleScript problems.

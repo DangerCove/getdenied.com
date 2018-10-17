@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Denied is Out Now!"
+title: "Denied is out now!"
 date: 2014-09-18 1:00:00
 categories: [releases, announcements]
 description: Version 1.0.0 of Denied is now available as a free trial or via the Mac App Store!

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A Few Things I'm Working On"
+title: "A few things I'm working on"
 date: 2014-10-28 16:00:00
 categories: [updates]
 description: A new Denied update is in the works. This is what I'm working on.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A New Nickelback Album"
+title: "A new Nickelback album"
 date: 2014-11-23 18:00:00
 categories: [nickelback, albums]
 description: Nickelback released a new album this month. It's called No Fixed Address and here's my opinion.

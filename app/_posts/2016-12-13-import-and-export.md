@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Import and Export Rules"
+title: "Import and export rules"
 date: 2016-12-13 13:00:00
 categories: [updates]
 description: Import new rules and export your existing rules for your friends.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Introducing Dark Mode and Skipping Disliked Songs (in iTunes)"
-date: 2018-09-20 08:00:00
+title: "Introducing Dark Mode and skipping disliked songs (in iTunes)"
+date: 2018-09-24 08:00:00
 categories: [updates]
 description: I released an update that introduces Dark Mode and skipping disliked songs.
 ---
