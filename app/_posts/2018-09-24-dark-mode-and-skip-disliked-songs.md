@@ -6,7 +6,7 @@ categories: [updates]
 description: I released an update that introduces Dark Mode and skipping disliked songs.
 ---
 
-<em>Note: [Upgrade to version 1.5.1](/appstore) if you're on Mojave. It fixes a bug that prevented Denied from asking permission to access Spotify and iTunes.</em>
+_Note: [Upgrade to version 1.5.1](/appstore) if you're on Mojave. It fixes a bug that prevented Denied from asking permission to access Spotify and iTunes._
 
 Apple has released [the latest version of macOS](https://www.apple.com/macos/mojave/) to the public. The prominent new feature Mojave introduces is a new graphical theme, that Apple has dubbed Dark Mode. It's a gorgeous, rough, yet elegant way to present the operating system you're familiar with. Apps that customize their interface to take full advantage of Dark Mode look right at home and feel great to use. 
 
@@ -24,7 +24,7 @@ This has been a much requested feature and I'm happy to say that it's finally he
 
 With the latest update of Denied this can been corrected. If enabled, Denied will will automatically skip over songs being played on iTunes or Apple Music if they're disliked.
 
-<small>A similar feature exists in Spotify, but the property isn't accessible to third-party applications (like Denied). I'm regularly checking if this changes.</small>
+A similar feature exists in Spotify, but the property isn't accessible to third-party applications (like Denied). I'm regularly checking if this changes.
 
 ## Skipping explicit songs updated
 
