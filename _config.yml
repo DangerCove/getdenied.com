@@ -25,7 +25,7 @@ trial: false
 exclude: ['img', 'css', 'js', 'fonts',
           '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
 
-include: ['.htaccess']
+include: ['.htaccess', '_redirects']
 
 # _config.build.yml sets future and show_drafts to false on `grunt build`
 future: true
