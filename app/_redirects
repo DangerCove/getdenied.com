@@ -1,18 +1,29 @@
-https://deniedapp.com/*                     https://www.denied.app/:splat      301!
-https://www.deniedapp.com/*                 https://www.denied.app/:splat      301!
-https://getdenied.com/*                     https://www.denied.app/:splat      301!
-https://www.getdenied.com/*                 https://www.denied.app/:splat      301!
+https://deniedapp.com/*                                       https://www.denied.app/:splat                                                             301!
+https://www.deniedapp.com/*                                   https://www.denied.app/:splat                                                             301!
+https://getdenied.com/*                                       https://www.denied.app/:splat                                                             301!
+https://www.getdenied.com/*                                   https://www.denied.app/:splat                                                             301!
 
-/blog/:year/:month/:day/:title              /news/:title
-/blog                                       /news
+/blog/:year/:month/:day/:title                                https://www.dangercove.com/news/:title
+/blog/press-release*                                          https://www.dangercove.com/news/denied-press-release
+/blog                                                         https://www.dangercove.com/news/denied
+/news/press-release*                                          https://www.dangercove.com/news/denied-press-release
+/news/denied-supports-more-music-apps-and-is-on-sale*         https://www.dangercove.com/news/denied-now-supports-rdio-and-itunes 
+/news/things-im-working-on*                                   https://www.dangercove.com/news/things-im-working-on-with-denied
+/news/dark-mode-and-skip-disliked-songs*                      https://www.dangercove.com/news/denied-supports-dark-mode-and-skips-disliked-songs
+/news/improved-disliked-song-skipping*                        https://www.dangercove.com/news/improved-disliked-song-skipping-for-denied
+/news/update-1.5.3-out-now*                                   https://www.dangercove.com/news/denied-1.5.3-out-now
+/news/*                                                       https://www.dangercove.com/news/:splat                                                    301!
+/review*                                                      https://www.dangercove.com/review                                                         301!
 
-/presskit                                   https://www.dropbox.com/s/qimzptnfqsbzrjf/Denied%20Press%20Kit.zip?dl=0
-/buy                                        https://sites.fastspring.com/dangercove/product/denied
-/appstore                                   https://itunes.apple.com/us/app/denied-skip-terrible-music/id909257784?ls=1&mt=12
-/download                                   https://download.getdenied.com/Denied-latest.zip
-/support                                    https://support.dangercove.com/category/denied
+/presskit                                                     https://www.dropbox.com/s/qimzptnfqsbzrjf/Denied%20Press%20Kit.zip?dl=0
+/buy                                                          https://sites.fastspring.com/dangercove/product/denied
+/appstore                                                     https://itunes.apple.com/us/app/denied-skip-terrible-music/id909257784?ls=1&mt=12
+/download                                                     https://download.getdenied.com/Denied-latest.zip
+/support                                                      https://support.dangercove.com/category/denied
 
-https://app.getdenied.com/interface/buy     https://sites.fastspring.com/dangercove/product/denied
-https://app.getdenied.com/interface/help    https://support.dangercove.com/category/denied
-https://app.getdenied.com/interface/review  https://www.denied.app/review
-https://app.getdenied.com/spotify/playlist  spotify:user:boyvanamstel:playlist:72eVI4Q7UGOznigIDjtrCB
+https://app.getdenied.com/interface/buy                       https://sites.fastspring.com/dangercove/product/denied
+https://app.getdenied.com/interface/help                      https://support.dangercove.com/category/denied
+https://app.getdenied.com/interface/review                    https://www.denied.app/review
+https://app.getdenied.com/spotify/playlist                    spotify:user:boyvanamstel:playlist:72eVI4Q7UGOznigIDjtrCB
+
+/*                                                            https://www.dangercove.com/denied/:splat                                                  301!
