@@ -1,7 +1,4 @@
-https://deniedapp.com/*                                       https://www.denied.app/:splat                                                             301!
-https://www.deniedapp.com/*                                   https://www.denied.app/:splat                                                             301!
-https://getdenied.com/*                                       https://www.denied.app/:splat                                                             301!
-https://www.getdenied.com/*                                   https://www.denied.app/:splat                                                             301!
+https://getdenied.com/*                                       https://www.getdenied.app/:splat                                                             301!
 
 /blog/:year/:month/:day/:title                                https://www.dangercove.com/news/:title
 /blog/press-release*                                          https://www.dangercove.com/news/denied-press-release
